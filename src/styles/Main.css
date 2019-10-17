@@ -1,0 +1,25 @@
+.topo{
+    width: 100vw;
+    height: 151px;
+    background-image: linear-gradient(173deg, #ee4c77 24%, #0d0430 66%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logoIoasys{
+    width: 234.2px;
+    margin-top: 49px;
+    margin-bottom: 45px;
+    height: 57px;
+    align-self: center;
+}
+
+.icLupa{
+    margin-right: 40px;
+}
+
+.searchForm{
+    height: 115px;
+    width: 700px;
+}
