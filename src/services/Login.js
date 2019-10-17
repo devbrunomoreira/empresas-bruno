@@ -3,6 +3,7 @@ import logoIoasys from '../imgs/logo-home.png'
 import logoEmail from '../imgs/ic-email.png'
 import logoCadeado from '../imgs/ic-cadeado.png'
 import Axios from 'axios'
+import '../styles/Login.css'
 
 
 export class Login extends Component {
@@ -56,21 +57,26 @@ export class Login extends Component {
         return (
         <div className="App">
             <div className="App-header">
-            <img src={logoIoasys} className="App-logo" alt="logo" />
-            <h2>Bem Vindo ao Empresas</h2>
-        </div>
+              <div className="divLogo">
+                <img src={logoIoasys} className="App-logo" alt="logo" />
+              </div>
+              <div className="divContent">
+                <h2>BEM-VINDO AO EMPRESAS</h2>
+                <p>Lorem ipsum dolor sit amet, contetur adipiscing elit. Nunc accumsan.</p>
+              </div>
+            </div>
 
         <div id="emailForm">
           <img src={logoEmail} className="icEmail"/>
           <input id="email" onChange={this.setDataLogin} type="text" class="form-control" name="email" placeholder="Email"/>
         </div>
         
-        <div>
+        <div id="passwordForm">
           <img src={logoCadeado} className="icEmail"/>
           <input id="password" onChange={this.setDataPassword} type="text" class="form-control" name="password" placeholder="Senha"/>
         </div>
-
-        <button onClick={this.requestAccessToken.bind(this)}>Entrar</button>
+        
+        <button id="buttonLogin" onClick={this.requestAccessToken.bind(this)}>Entrar</button>
         </div>
         )
     }
