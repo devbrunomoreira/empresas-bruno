@@ -60,9 +60,6 @@ class Main extends Component {
         )
     }
 
-
-
-
 }
 
 
