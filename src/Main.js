@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import logoIoasys from './imgs/logo-nav.png'
 import icLupa from './imgs/ic-search.svg'
 import icClose from './imgs/ic-close.svg'
+import Card from './components/Card'
 import './styles/Main.css'
 
 class Main extends Component {
@@ -10,10 +11,10 @@ class Main extends Component {
         this.state = {
             isSearching: false
         };
-        this.handleLupa = this.handleLupa.bind(this);
+        this.handleSearch = this.handleSearch.bind(this);
     }
 
-    handleLupa(){
+    handleSearch(){
         if(this.state.isSearching){
             this.setState({isSearching: false})
         }else
@@ -31,7 +32,7 @@ class Main extends Component {
                             
                             <img src={logoIoasys} className="logoIoasys" alt="logo" />
             
-                            <img src={icLupa} className="icLupa" alt="lupa" onClick={this.handleLupa.bind(this)} />
+                            <img src={icLupa} className="icLupa" alt="lupa" onClick={this.handleSearch.bind(this)} />
                         </>
                     ) : (
                         <>
@@ -40,7 +41,7 @@ class Main extends Component {
                                 <img src={icLupa} className="icLupaSearch" alt="lupa"  />
                                 <input id="search" type="text" placeholder="Pesquisar" />
                                 </div>
-                                <img src={icClose} className="icClose" alt="fechar" onClick={this.handleLupa.bind(this)} />
+                                <img src={icClose} className="icClose" alt="fechar" onClick={this.handleSearch.bind(this)} />
                             </div>
                         </>
                     )}
@@ -51,7 +52,7 @@ class Main extends Component {
                     {!this.state.isSearching ? (
                         <p>Clique na busca para iniciar</p>
                     ) : (
-                        null
+                        <Card />
                     ) }
                         
                 </div>
