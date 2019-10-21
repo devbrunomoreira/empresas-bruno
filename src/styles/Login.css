@@ -1,7 +1,7 @@
 #email{
     background-color: transparent;
     border: none;
-  }
+}
   
 #password{
     background-color: transparent;
@@ -21,14 +21,14 @@
     border-radius: 3.6px;
     margin-top: 57px;
 
-  }
+}
 
 #emailForm{
     display: flex;
     text-align: center;
     border-bottom: 0.7px solid #383743 ;
     margin-bottom: 37.5px;
-  }
+}
 
 #passwordForm{
     display: flex;

@@ -13,14 +13,12 @@ class Main extends Component {
         };
         this.handleSearch = this.handleSearch.bind(this);
     }
-
     handleSearch(){
         if(this.state.isSearching){
             this.setState({isSearching: false})
         }else
             this.setState({isSearching: true})
     }
-
     render(){
         return(
             <div className="site">
@@ -44,22 +42,18 @@ class Main extends Component {
                                 <img src={icClose} className="icClose" alt="fechar" onClick={this.handleSearch.bind(this)} />
                             </div>
                         </>
-                    )}
-                    
+                    )}          
                 </div>
-                
                 <div className="body">
                     {!this.state.isSearching ? (
                         <p>Clique na busca para iniciar</p>
                     ) : (
                         <Card />
                     ) }
-                        
                 </div>
             </div>
         )
     }
-
 }
 
 

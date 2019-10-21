@@ -16,7 +16,7 @@ export class Login extends Component {
         };
         this.setDataLogin = this.setDataLogin.bind(this);
         this.setDataPassword = this.setDataPassword.bind(this);
-        
+        this.requestAccessToken = this.requestAccessToken.bind(this);
     
     }
     
@@ -49,9 +49,6 @@ export class Login extends Component {
         }); 
     }
 
-
-    
-
     render() {
         console.log('passei aqui')
         return (
@@ -75,8 +72,8 @@ export class Login extends Component {
           <img src={logoCadeado} className="icEmail"/>
           <input id="password" onChange={this.setDataPassword} type="text" class="form-control" name="password" placeholder="Senha"/>
         </div>
-        
-        <button id="buttonLogin" onClick={this.requestAccessToken.bind(this)}>Entrar</button>
+
+        <button id="buttonLogin" onClick={this.requestAccessToken}>Entrar</button>
         </div>
         )
     }
