@@ -31,7 +31,7 @@ class Main extends Component {
                             
                             <img src={logoIoasys} className="logoIoasys" alt="logo" />
             
-                            <img src={icLupa} className="icLupa" alt="lupa" onClick={this.handleSearch.bind(this)} />
+                            <img src={icLupa} className="icLupa" alt="lupa" onClick={this.handleSearch} />
                         </>
                     ) : (
                         <>
@@ -40,7 +40,7 @@ class Main extends Component {
                                 <img src={icLupa} className="icLupaSearch" alt="lupa"  />
                                 <input id="search" type="text" placeholder="Pesquisar" />
                                 </div>
-                                <img src={icClose} className="icClose" alt="fechar" onClick={this.handleSearch.bind(this)} />
+                                <img src={icClose} className="icClose" alt="fechar" onClick={this.handleSearch} />
                             </div>
                         </>
                     )}          
