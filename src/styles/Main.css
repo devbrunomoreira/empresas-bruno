@@ -1,0 +1,57 @@
+.site{
+    display: flex;
+    flex-direction: column;
+}
+.topo{
+    width: 97.5vw;
+    height: 151px;
+    background-image: linear-gradient(173deg, #ee4c77 24%, #0d0430 66%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.body{
+    background-color: #ebe9d7;
+    display: flex;
+    height: calc( 100vh - 151px );
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.logoIoasys{
+    width: 234.2px;
+    margin-top: 49px;
+    margin-bottom: 45px;
+    height: 57px;
+    align-self: center;
+}
+
+.icLupa{
+    margin-right: 40px;
+}
+
+
+.searchForm{
+    display: flex;
+    text-align: center;
+    border-bottom: 0.7px solid #383743;
+    height: 50px;
+    width: 85vw;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.searchInput{
+    display: flex;
+    
+}
+
+
+#search{
+    background-color: transparent;
+    border: none;
+    width: 86vw;
+}
