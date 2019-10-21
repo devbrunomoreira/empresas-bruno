@@ -33,10 +33,8 @@ export class Login extends Component {
       return Axios.post(
         'https://empresas.ioasys.com.br/api/v1/users/auth/sign_in',
         {
-          user: {
-            email: email,
-            password: password
-          }
+            email: this.state.email,
+            password: this.state.password
         },
         { withCredentials: true}
       )
@@ -79,7 +77,7 @@ export class Login extends Component {
         
         <button id="buttonLogin" onClick={this.requestAccessToken.bind(this)}>Entrar</button>
         </div>
-        )
+        );
     }
 }
 

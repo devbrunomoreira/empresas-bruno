@@ -1,18 +1,12 @@
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
-
+import '../styles/Card.css'
 class Card extends Component {  
 
   render() {
     return (
         <div className="card">
-            <img src={this.props.imgEnterprise} />
-            <div className="infoEnterprise" >
-                <p>{this.props.nameEnterprise}</p>
-                <p>{this.props.typeEnterprise}</p>
-                <p>{this.props.locationEnterprise}</p>
-            </div>
-            
+            {this.props.children} 
         </div>
     );
   

@@ -3,6 +3,7 @@ import logoIoasys from './imgs/logo-nav.png'
 import icLupa from './imgs/ic-search.svg'
 import icClose from './imgs/ic-close.svg'
 import Card from './components/Card'
+import ListEnterprise from './components/listEnterprise'
 import './styles/Main.css'
 
 class Main extends Component {
@@ -18,12 +19,12 @@ class Main extends Component {
     handleSearch(){
         if(this.state.isSearching){
             this.setState({isSearching: false})
-        }else
+        }else{
             this.setState({isSearching: true})
+        }
     }
     takeInfoSearch(event){
         this.setState({search: event.target.value})
-
     }
 
     render(){
@@ -43,8 +44,8 @@ class Main extends Component {
                         <>
                             <div className="searchForm">
                                 <div className="searchInput">
-                                <img src={icLupa} className="icLupaSearch" alt="lupa"  />
-                                <input id="search" type="text" placeholder="Pesquisar" />
+                                    <img src={icLupa} className="icLupaSearch" alt="lupa"  />
+                                    <input id="search" type="text" placeholder="Pesquisar" />
                                 </div>
                                 <img src={icClose} className="icClose" alt="fechar" onClick={this.handleSearch.bind(this)} />
                             </div>
@@ -57,7 +58,9 @@ class Main extends Component {
                     {!this.state.isSearching ? (
                         <p>Clique na busca para iniciar</p>
                     ) : (
-                        <Card />
+                        <Card >
+                            <ListEnterprise  nameEnterprise='Empresa 1' typeEnterprise='Negócio' locationEnterprise='Brasil' />
+                        </Card>
                     ) }
                         
                 </div>
