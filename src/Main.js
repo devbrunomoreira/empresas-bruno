@@ -16,8 +16,9 @@ class Main extends Component {
     handleSearch(){
         if(this.state.isSearching){
             this.setState({isSearching: false})
-        }else
+        }else{
             this.setState({isSearching: true})
+        }
     }
     render(){
         return(
