@@ -1,14 +1,14 @@
 #email{
     background-color: transparent;
     border: none;
-  }
+}
   
 #password{
     background-color: transparent;
     border: none;
 }
 
-#buttonLogin {
+#buttonLogin{
     background-color: #57bbbc;
     border: none;
     color: white;
@@ -21,14 +21,14 @@
     border-radius: 3.6px;
     margin-top: 57px;
 
-  }
+}
 
 #emailForm{
     display: flex;
     text-align: center;
     border-bottom: 0.7px solid #383743 ;
     margin-bottom: 37.5px;
-  }
+}
 
 #passwordForm{
     display: flex;
@@ -36,7 +36,7 @@
     border-bottom: 0.7px solid #383743 ;
 }
 
-.App {
+.App{
     display: flex;
     justify-content: center;
     align-items: center;
