@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import logoIoasys from '../imgs/logo-home.png'
 import logoEmail from '../imgs/ic-email.png'
 import logoCadeado from '../imgs/ic-cadeado.png'
-import Axios from 'axios'
+import axios from 'axios'
 import '../styles/Login.css'
 
 
@@ -30,13 +30,15 @@ export class Login extends Component {
     
     requestAccessToken(email, password) {
       console.log(this.state)
-      return Axios.post(
+      return axios.post(
         'https://empresas.ioasys.com.br/api/v1/users/auth/sign_in',
         {
             email: this.state.email,
             password: this.state.password
         },
-        { withCredentials: true}
+        { headers: 
+          {'Content-Type': 'application/json'}
+        }
       )
         .then((response) => {
           console.log(response)
@@ -44,7 +46,7 @@ export class Login extends Component {
           localStorage.setItem('userToken', response.token)
         })
         .catch(function(error) {
-          console.log('There has been a problem with your fetch operation: ' + error);
+          console.log('There has been a big problem with your fetch operation: ' + error);
         }); 
     }
 
