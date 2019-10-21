@@ -15,7 +15,6 @@ class Main extends Component {
         };
         this.handleSearch = this.handleSearch.bind(this);
     }
-
     handleSearch(){
         if(this.state.isSearching){
             this.setState({isSearching: false})
@@ -26,7 +25,6 @@ class Main extends Component {
     takeInfoSearch(event){
         this.setState({search: event.target.value})
     }
-
     render(){
         return(
             <div className="site">
@@ -38,7 +36,7 @@ class Main extends Component {
                             
                             <img src={logoIoasys} className="logoIoasys" alt="logo" />
             
-                            <img src={icLupa} className="icLupa" alt="lupa" onClick={this.handleSearch.bind(this)} />
+                            <img src={icLupa} className="icLupa" alt="lupa" onClick={this.handleSearch} />
                         </>
                     ) : (
                         <>
@@ -47,13 +45,11 @@ class Main extends Component {
                                     <img src={icLupa} className="icLupaSearch" alt="lupa"  />
                                     <input id="search" type="text" placeholder="Pesquisar" />
                                 </div>
-                                <img src={icClose} className="icClose" alt="fechar" onClick={this.handleSearch.bind(this)} />
+                                <img src={icClose} className="icClose" alt="fechar" onClick={this.handleSearch} />
                             </div>
                         </>
-                    )}
-                    
+                    )}          
                 </div>
-                
                 <div className="body">
                     {!this.state.isSearching ? (
                         <p>Clique na busca para iniciar</p>
@@ -62,12 +58,10 @@ class Main extends Component {
                             <ListEnterprise  nameEnterprise='Empresa 1' typeEnterprise='Negócio' locationEnterprise='Brasil' />
                         </Card>
                     ) }
-                        
                 </div>
             </div>
         )
     }
-
 }
 
 

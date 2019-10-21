@@ -22,7 +22,6 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 const Routes = () => (
   <BrowserRouter>
     <Switch>
-      <Route path="/main-screen" component={Main} /> 
       <Route path="/main" component={Main} />
       <Route path="/" component={Login} />
     </Switch>

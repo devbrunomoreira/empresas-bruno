@@ -18,8 +18,6 @@
     align-items: center;
     
 }
-
-
 .logoIoasys{
     width: 234.2px;
     margin-top: 49px;
@@ -27,12 +25,9 @@
     height: 57px;
     align-self: center;
 }
-
 .icLupa{
     margin-right: 40px;
 }
-
-
 .searchForm{
     display: flex;
     text-align: center;
@@ -48,8 +43,6 @@
     display: flex;
     
 }
-
-
 #search{
     background-color: transparent;
     border: none;
