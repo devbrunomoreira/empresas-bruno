@@ -9,7 +9,8 @@ class Main extends Component {
     constructor(props){
         super(props)
         this.state = {
-            isSearching: false
+            isSearching: false,
+            search: ''
         };
         this.handleSearch = this.handleSearch.bind(this);
     }
@@ -19,6 +20,10 @@ class Main extends Component {
             this.setState({isSearching: false})
         }else
             this.setState({isSearching: true})
+    }
+    takeInfoSearch(event){
+        this.setState({search: event.target.value})
+
     }
 
     render(){
