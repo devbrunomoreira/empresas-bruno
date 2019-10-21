@@ -50,7 +50,6 @@ export class Login extends Component {
     }
 
     render() {
-        console.log('passei aqui')
         return (
         <div className="App">
             <div className="App-header">
