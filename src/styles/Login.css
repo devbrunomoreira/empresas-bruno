@@ -54,3 +54,7 @@
     width: 360px;
     text-align: center;
 }
+
+::placeholder{
+    color: #383743;
+}

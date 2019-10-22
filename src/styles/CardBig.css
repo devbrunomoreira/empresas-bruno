@@ -1,0 +1,33 @@
+.cardBig{
+    box-shadow: 1px 1px 1px 1px rgb(228,228,228);
+    padding: 16px;
+    background: rgb(250,250,250);
+    margin-top: 20px;
+    width: 70vw;
+}
+.infoEnterpriseBig{
+    display: flex;
+    flex-direction: column;
+}
+
+.imgEnterpriseListBig{
+    width: 779px;
+    height: 296px;
+    display: flex;
+    align-self: center;
+    
+}
+.textEnterprise{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-family: SourceSansPro;
+    width: 80%;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: -0.38px;
+    text-align: left;
+}

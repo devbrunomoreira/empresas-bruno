@@ -2,4 +2,57 @@
     box-shadow: 1px 1px 1px 1px rgb(228,228,228);
     padding: 16px;
     background: rgb(250,250,250);
+    display: flex;
+    width: 70vw;
+    margin-top: 20px;
+}
+
+.infoEnterprise{
+    padding: 10px;
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imgEnterpriseList{
+    height: 160px;
+    width: 293px;
+}
+
+.titleEnterprise{
+    font-family: Roboto;
+    margin: 4px;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+.typeEnterprise{
+    font-family: Roboto;
+    color: #8d8c8c;
+    margin: 4px;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+}
+.locationEnterprise{
+    font-family: Roboto;
+    color: #8d8c8c;
+    margin: 4px;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
 }

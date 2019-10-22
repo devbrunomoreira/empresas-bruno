@@ -6,8 +6,13 @@ class Card extends Component {
   render() {
     return (
         <div className="card">
-            {this.props.children} 
-        </div>
+                <img src={this.props.imgEnterprise} className="imgEnterpriseList"/>
+                <div className="infoEnterprise" >
+                    <div className="titleEnterprise">{this.props.nameEnterprise}</div>
+                    <div className="typeEnterprise">{this.props.typeEnterprise}</div>
+                    <div className="locationEnterprise">{this.props.locationEnterprise}</div>
+                </div>
+            </div>
     );
   
  
