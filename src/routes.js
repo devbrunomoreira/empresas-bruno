@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import App from './App'
 import Login from './services/Login'
 import Main from './Main'
+import MainBigCard from './MainBigCard'
 
 import { isAuthenticated } from "./services/auth";
 
@@ -22,6 +23,7 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 const Routes = () => (
   <BrowserRouter>
     <Switch>
+      <Route path="/maincard/:id" component={MainBigCard} />
       <Route path="/main" component={Main} />
       <Route path="/" component={Login} />
     </Switch>

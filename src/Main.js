@@ -7,6 +7,7 @@ import Card from './components/Card'
 import CardBig from './components/CardBig'
 import './styles/Main.css'
 import json from './mock.json'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 class Main extends Component {
     constructor(props) {
@@ -16,6 +17,7 @@ class Main extends Component {
             search: ''
         };
         this.handleSearch = this.handleSearch.bind(this);
+        
     }
     handleSearch() {
         if (this.state.isSearching) {
@@ -26,6 +28,10 @@ class Main extends Component {
     }
     takeInfoSearch(event) {
         this.setState({ search: event.target.value })
+    }
+    clickToBigCard(id) {
+        const cardId = json.enterprises.find(e =>  e.id === id ).id
+        console.log(cardId)
     }
     render() {
         return (
@@ -55,11 +61,18 @@ class Main extends Component {
                     ) : (
                             <>
                                 {json.enterprises.map(enterprise => (
-                                    <CardBig imgEnterpriseBig={icEnterprise} textEnterprise={enterprise.description} />
-                                ))}
-                                {json.enterprises.map(enterprise => (
-                                    <Card imgEnterprise={icEnterprise} nameEnterprise={enterprise.enterprise_name} 
-                                    typeEnterprise={enterprise.enterprise_type.enterprise_type_name} locationEnterprise={enterprise.country} />
+                                    <>
+                                    
+                                        <Link className="body_field--link" to={'/maincard/'+ enterprise.id} > 
+                                        <Card 
+                                        imgEnterprise={icEnterprise} 
+                                        nameEnterprise={enterprise.enterprise_name} 
+                                        typeEnterprise={enterprise.enterprise_type.enterprise_type_name} 
+                                        locationEnterprise={enterprise.country}
+                                        key={enterprise.id} />
+                                     </Link>
+                                     
+                                     </>
                                  ))}
                             </>
                         )}
