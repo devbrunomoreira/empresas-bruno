@@ -46,7 +46,7 @@ export class Login extends Component {
           localStorage.setItem('userToken', response.token)
         })
         .catch(function(error) {
-          console.log('There has been a big problem with your fetch operation: ' + error);
+          console.error('There has been a big problem with your fetch operation: ' + error);
         }); 
     }
 

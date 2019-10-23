@@ -20,7 +20,7 @@
     align-items: center;
     
 }
-.bodyBeforeSearch{
+.body_field{
     height: calc(100vh - 151px);
     display: flex;
     align-items: center;

@@ -8,9 +8,6 @@ import CardBig from './components/CardBig'
 import './styles/Main.css'
 import json from './mock.json'
 
-
-
-
 class Main extends Component {
     constructor(props) {
         super(props)
@@ -20,7 +17,6 @@ class Main extends Component {
         };
         this.handleSearch = this.handleSearch.bind(this);
     }
-
     handleSearch() {
         if (this.state.isSearching) {
             this.setState({ isSearching: false })
@@ -35,13 +31,10 @@ class Main extends Component {
         return (
             <div className="site">
                 <div className="topo">
-
                     {!this.state.isSearching ? (
                         <>
                             <div />
-
                             <img src={logoIoasys} className="logoIoasys" alt="logo" />
-
                             <img src={icLupa} className="icLupa" alt="lupa" onClick={this.handleSearch} />
                         </>
                     ) : (
@@ -58,7 +51,7 @@ class Main extends Component {
                 </div>
                 <div className="body">
                     {!this.state.isSearching ? (
-                        <div className="bodyBeforeSearch">Clique na busca para iniciar</div>
+                        <div className="body_field">Clique na busca para iniciar</div>
                     ) : (
                             <>
                                 {json.enterprises.map(enterprise => (
@@ -68,7 +61,6 @@ class Main extends Component {
                                     <Card imgEnterprise={icEnterprise} nameEnterprise={enterprise.enterprise_name} 
                                     typeEnterprise={enterprise.enterprise_type.enterprise_type_name} locationEnterprise={enterprise.country} />
                                  ))}
-
                             </>
                         )}
                 </div>
@@ -76,6 +68,5 @@ class Main extends Component {
         )
     }
 }
-
 
 export default Main
