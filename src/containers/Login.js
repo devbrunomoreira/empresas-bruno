@@ -4,9 +4,6 @@ import logoEmail from "../assets/imgs/ic-email.png";
 import logoCadeado from "../assets/imgs/ic-cadeado.png";
 import axios from "axios";
 import "../assets/styles/Login.scss";
-
-
-
 export class Login extends Component {
   constructor(props) {
     super(props);
@@ -19,18 +16,14 @@ export class Login extends Component {
     this.setDataPassword = this.setDataPassword.bind(this);
     this.requestAccessToken = this.requestAccessToken.bind(this);
   }
-
   setDataLogin(event) {
     this.setState({ email: event.target.value });
   }
   setDataPassword(event) {
     this.setState({ password: event.target.value });
   }
-
   requestAccessToken(email, password) {
-    console.log(this.state);
-    return axios
-      .post(
+    return axios.post(
         "https://empresas.ioasys.com.br/api/v1/users/auth/sign_in",
         {
           email: this.state.email,
@@ -39,7 +32,6 @@ export class Login extends Component {
         { headers: { "Content-Type": "application/json" } }
       )
       .then(response => {
-        console.log(response);
         this.setState({ token: response.token });
         localStorage.setItem("userToken", response.token);
       })
@@ -49,7 +41,6 @@ export class Login extends Component {
         );
       });
   }
-
   render() {
     return (
       <div className="App">
@@ -65,31 +56,28 @@ export class Login extends Component {
             </p>
           </div>
         </div>
-
         <div id="emailForm">
           <img src={logoEmail} className="icEmail" />
           <input
             id="email"
             onChange={this.setDataLogin}
             type="text"
-            class="form-control"
+            className="form-control"
             name="email"
             placeholder="Email"
           />
         </div>
-
         <div id="passwordForm">
           <img src={logoCadeado} className="icEmail" />
           <input
             id="password"
             onChange={this.setDataPassword}
             type="text"
-            class="form-control"
+            className="form-control"
             name="password"
             placeholder="Senha"
           />
         </div>
-
         <button id="buttonLogin" onClick={this.requestAccessToken}>
           Entrar
         </button>

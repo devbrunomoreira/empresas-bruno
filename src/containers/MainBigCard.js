@@ -16,24 +16,24 @@ class MainBigCard extends Component {
         };
     }
     render() {
-        let enterpriseFilter = json.enterprises.filter(enterprise => {
+        let enterpriseFilter = json.enterprises.find(enterprise => {
             return enterprise.id == this.state.idCard
         })
         return (
             <div className="site">
-                <div className="topo">
+                <div className="top">
                     <Link className="icBack" to='/main'>
                         <img src={icBack} className="icBack" alt="voltar"  />
                     </Link>
                         <img src={logoIoasys} className="logoIoasys" alt="logo" />
-                    <div />
+                        <div />
                 </div>
-                    <div className="body" >
-                        <div className="bigCard">
-                            <CardBig textEnterprise={enterpriseFilter[0].description} 
-                             imgEnterpriseBig={icEnterprise} />
-                        </div>
+                <div className="body" >
+                    <div className="bigCard">
+                        <CardBig textEnterprise={enterpriseFilter.description} 
+                            imgEnterpriseBig={icEnterprise} />
                     </div>
+                </div>
             </div>
         )
     }

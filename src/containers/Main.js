@@ -8,8 +8,6 @@ import Card from '../components/Card'
 import CardBig from '../components/CardBig'
 import '../assets/styles/Main.scss'
 import json from '../mock.json'
-
-
 class Main extends Component {
     constructor(props) {
         super(props)
@@ -18,26 +16,17 @@ class Main extends Component {
             search: ''
         };
         this.handleSearch = this.handleSearch.bind(this);
-        
     }
     handleSearch() {
-        if (this.state.isSearching) {
-            this.setState({ isSearching: false })
-        } else {
-            this.setState({ isSearching: true })
-        }
+        this.setState({ isSearching: !this.state.isSearching });
     }
     takeInfoSearch(event) {
         this.setState({ search: event.target.value })
     }
-    clickToBigCard(id) {
-        const cardId = json.enterprises.find(e =>  e.id === id ).id
-        console.log(cardId)
-    }
     render() {
         return (
             <div className="site">
-                <div className="topo">
+                <div className="top">
                     {!this.state.isSearching ? (
                         <>
                             <div />
@@ -62,8 +51,6 @@ class Main extends Component {
                     ) : (
                             <>
                                 {json.enterprises.map(enterprise => (
-                                    <>
-                                    
                                         <Link className="body_field--link" to={'/maincard/'+ enterprise.id} > 
                                         <Card 
                                         imgEnterprise={icEnterprise} 
@@ -72,8 +59,6 @@ class Main extends Component {
                                         locationEnterprise={enterprise.country}
                                         key={enterprise.id} />
                                      </Link>
-                                     
-                                     </>
                                  ))}
                             </>
                         )}

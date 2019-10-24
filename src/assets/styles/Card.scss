@@ -7,7 +7,7 @@
     margin-top: 20px;
 }
 
-.infoEnterprise{
+.card__field{
     padding: 10px;
     margin: 4px;
     display: flex;
@@ -20,7 +20,7 @@
     width: 293px;
 }
 
-.titleEnterprise{
+.card__field--name{
     font-family: Roboto;
     margin: 4px;
     font-size: 30px;
@@ -32,7 +32,7 @@
     text-align: left;
 }
 
-.typeEnterprise{
+.card__field--type{
     font-family: Roboto;
     color: #8d8c8c;
     margin: 4px;
@@ -44,7 +44,7 @@
     letter-spacing: normal;
     text-align: left;
 }
-.locationEnterprise{
+.card__field--location{
     font-family: Roboto;
     color: #8d8c8c;
     margin: 4px;
