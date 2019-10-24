@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
-import logoIoasys from './imgs/logo-nav.png'
-import icLupa from './imgs/ic-search.svg'
-import icClose from './imgs/ic-close.svg'
-import icEnterprise from './imgs/img-e-1-lista.svg'
-import Card from './components/Card'
-import CardBig from './components/CardBig'
-import './styles/Main.css'
-import json from './mock.json'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import logoIoasys from '../assets/imgs/logo-nav.png'
+import icLupa from '../assets/imgs/ic-search.svg'
+import icClose from '../assets/imgs/ic-close.svg'
+import icEnterprise from '../assets/imgs/img-e-1-lista.svg'
+import Card from '../components/Card'
+import CardBig from '../components/CardBig'
+import '../assets/styles/Main.scss'
+import json from '../mock.json'
+
 
 class Main extends Component {
     constructor(props) {

@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
-import '../styles/CardBig.css'
+import '../assets/styles/CardBig.scss'
 class CardBig extends Component {  
     render() {
         return (

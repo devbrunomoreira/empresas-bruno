@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .site{
     display: flex;
     flex: 1;
@@ -7,7 +12,6 @@
     width: 97.5vw;
     height: 151px;
     background-image: linear-gradient(180deg, #ee4c77 10%, #0d0430 300%);
-    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -18,7 +22,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 .body_field{
     height: calc(100vh - 151px);
@@ -48,6 +51,7 @@
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 50px;
+    margin-bottom: 50px;
     justify-content: space-between;
 }
 .searchInput{

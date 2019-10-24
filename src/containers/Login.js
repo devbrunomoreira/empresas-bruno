@@ -1,9 +1,11 @@
 import React, { Component } from "react";
-import logoIoasys from "../imgs/logo-home.png";
-import logoEmail from "../imgs/ic-email.png";
-import logoCadeado from "../imgs/ic-cadeado.png";
+import logoIoasys from "../assets/imgs/logo-home.png";
+import logoEmail from "../assets/imgs/ic-email.png";
+import logoCadeado from "../assets/imgs/ic-cadeado.png";
 import axios from "axios";
-import "../styles/Login.css";
+import "../assets/styles/Login.scss";
+
+
 
 export class Login extends Component {
   constructor(props) {
