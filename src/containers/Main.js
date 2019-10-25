@@ -55,11 +55,11 @@ class Main extends Component {
                         json.enterprises.map(enterprise => (
                                 <Link className="body_field--link" to={'/maincard/'+ enterprise.id} > 
                                 <Card 
-                                imgEnterprise={icEnterprise} 
-                                nameEnterprise={enterprise.enterprise_name} 
-                                typeEnterprise={enterprise.enterprise_type.enterprise_type_name} 
-                                locationEnterprise={enterprise.country}
-                                key={enterprise.id} />
+                                 imgEnterprise={icEnterprise} 
+                                 nameEnterprise={enterprise.enterprise_name} 
+                                 typeEnterprise={enterprise.enterprise_type.enterprise_type_name} 
+                                 locationEnterprise={enterprise.country}
+                                 key={enterprise.id} />
                                 </Link>
                         ))    
                         )}
