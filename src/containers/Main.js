@@ -29,14 +29,17 @@ class Main extends Component {
                 <div className="top">
                     {!this.state.isSearching ? (
                         <>
-                            <div />
+                        <div className="top__field"> 
                             <img src={logoIoasys} className="logoIoasys" alt="logo" />
-                            <img src={icLupa} className="icLupa" alt="lupa" onClick={this.handleSearch} />
+                        </div>
+                            <div className="top__field--search">
+                                <img src={icLupa} className="icLupa" alt="lupa" onClick={this.handleSearch} />
+                            </div>
                         </>
                     ) : (
                             <>
                                 <div className="searchForm">
-                                    <div className="searchInput">
+                                    <div className="searchForm__field">
                                         <img src={icLupa} className="icLupaSearch" alt="lupa" />
                                         <input id="search" type="text" placeholder="Pesquisar" />
                                     </div>
@@ -49,18 +52,16 @@ class Main extends Component {
                     {!this.state.isSearching ? (
                         <div className="body_field">Clique na busca para iniciar</div>
                     ) : (
-                            <>
-                                {json.enterprises.map(enterprise => (
-                                        <Link className="body_field--link" to={'/maincard/'+ enterprise.id} > 
-                                        <Card 
-                                        imgEnterprise={icEnterprise} 
-                                        nameEnterprise={enterprise.enterprise_name} 
-                                        typeEnterprise={enterprise.enterprise_type.enterprise_type_name} 
-                                        locationEnterprise={enterprise.country}
-                                        key={enterprise.id} />
-                                     </Link>
-                                 ))}
-                            </>
+                        json.enterprises.map(enterprise => (
+                                <Link className="body_field--link" to={'/maincard/'+ enterprise.id} > 
+                                <Card 
+                                imgEnterprise={icEnterprise} 
+                                nameEnterprise={enterprise.enterprise_name} 
+                                typeEnterprise={enterprise.enterprise_type.enterprise_type_name} 
+                                locationEnterprise={enterprise.country}
+                                key={enterprise.id} />
+                                </Link>
+                        ))    
                         )}
                 </div>
             </div>

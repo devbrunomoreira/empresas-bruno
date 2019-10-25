@@ -5,9 +5,9 @@ class CardBig extends Component {
     render() {
         return (
             <div className="cardBig">
-                <div className="infoEnterpriseBig" >
+                <div className="cardBig__field" >
                     <img src={this.props.imgEnterpriseBig} className="imgEnterpriseListBig"/>
-                    <div className="textEnterprise">{this.props.textEnterprise}</div>
+                    <div className="cardBig__field--text">{this.props.textEnterprise}</div>
                 </div>
             </div>
         );

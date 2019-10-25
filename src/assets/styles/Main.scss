@@ -4,17 +4,32 @@ body {
     box-sizing: border-box;
 }
 .site{
+    background-color: #ebe9d7;
     display: flex;
     flex: 1;
     flex-direction: column;
+    height: 100vh;
 }
 .top{
-    width: 97.5vw;
+    width: 100vw;
     height: 151px;
     background-image: linear-gradient(180deg, #ee4c77 10%, #0d0430 300%);
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    
+
+    
+}
+.top__field{
+
+
+}
+.top__field--search{
+    display: flex;
+    position: relative;
+    left: 35%;
+
+
 }
 .body{
     background-color: #ebe9d7;
@@ -40,22 +55,23 @@ body {
     align-self: center;
 }
 .icLupa{
-    margin-right: 40px;
+    
 }
 .searchForm{
     display: flex;
     text-align: center;
     border-bottom: 0.7px solid #383743;
     height: 50px;
-    width: 85vw;
+    
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
     justify-content: space-between;
 }
-.searchInput{
+.searchForm__field{
     display: flex;
+    width: 80%;
 }
 #search{
     background-color: transparent;

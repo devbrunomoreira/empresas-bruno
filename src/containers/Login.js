@@ -45,10 +45,10 @@ export class Login extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <div className="divLogo">
+          <div className="App-header__field">
             <img src={logoIoasys} className="App-logo" alt="logo" />
           </div>
-          <div className="divContent">
+          <div className="App-header__field--content">
             <h2>BEM-VINDO AO EMPRESAS</h2>
             <p>
               Lorem ipsum dolor sit amet, contetur adipiscing elit. Nunc

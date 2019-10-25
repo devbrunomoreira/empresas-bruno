@@ -21,7 +21,7 @@ class MainBigCard extends Component {
         })
         return (
             <div className="site">
-                <div className="top">
+                <div className="topMain">
                     <Link className="icBack" to='/main'>
                         <img src={icBack} className="icBack" alt="voltar"  />
                     </Link>

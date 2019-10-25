@@ -5,7 +5,7 @@
     margin-top: 20px;
     width: 70vw;
 }
-.infoEnterpriseBig{
+.cardBig__field{
     display: flex;
     flex-direction: column;
 }
@@ -17,7 +17,7 @@
     align-self: center;
     
 }
-.textEnterprise{
+.cardBig__field--text{
     display: flex;
     justify-content: center;
     align-self: center;
