@@ -26,7 +26,6 @@ class MainBigCard extends Component {
                         <img src={icBack} className="icBack" alt="voltar"  />
                     </Link>
                         <img src={logoIoasys} className="logoIoasys" alt="logo" />
-                        <div />
                 </div>
                 <div className="body" >
                     <div className="bigCard">

@@ -5,6 +5,9 @@
     display: flex;
     width: 70vw;
     margin-top: 20px;
+    align-items: center;
+    max-width: 800px;
+    flex-wrap: wrap;
 }
 
 .card__field{
@@ -16,8 +19,9 @@
 }
 
 .imgEnterpriseList{
-    height: 160px;
-    width: 293px;
+    height: 15%;
+    width: 27%;
+    min-width: 200px;
 }
 
 .card__field--name{

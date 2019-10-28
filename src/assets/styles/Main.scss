@@ -23,7 +23,6 @@ body {
 .top__field--search{
     align-self: center;
     margin-left: auto;
-    margin-right: 20px;
 }
 .body{
     background-color: #ebe9d7;
@@ -49,7 +48,8 @@ body {
     align-self: center;
 }
 .icLupa{
-    
+    height: 50px;
+    width: 50px;
 }
 .searchForm{
     display: flex;
@@ -61,6 +61,7 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
     justify-content: space-between;
+    width: 95%
 }
 .searchForm__field{
     display: flex;
