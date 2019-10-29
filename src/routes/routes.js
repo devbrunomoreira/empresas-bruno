@@ -1,10 +1,11 @@
 import React from "react";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
-import App from './App'
-import Login from './services/Login'
-import Main from './Main'
+import App from '../containers/App'
+import Login from '../containers/Login'
+import Main from '../containers/Main'
+import MainBigCard from '../containers/MainBigCard'
 
-import { isAuthenticated } from "./services/auth";
+import { isAuthenticated } from "../services/auth";
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -22,6 +23,7 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 const Routes = () => (
   <BrowserRouter>
     <Switch>
+      <Route path="/maincard/:id" component={MainBigCard} />
       <Route path="/main" component={Main} />
       <Route path="/" component={Login} />
     </Switch>

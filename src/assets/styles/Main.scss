@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.site{
+    background-color: #ebe9d7;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 100vh;
+}
+.top{
+    width: 100vw;
+    height: 151px;
+    background-image: linear-gradient(180deg, #ee4c77 10%, #0d0430 300%);
+    display: flex;
+    
+}
+.top__field{
+    margin-left: auto;
+}
+.top__field--search{
+    align-self: center;
+    margin-left: auto;
+}
+.body{
+    background-color: #ebe9d7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.body_field{
+    height: calc(100vh - 151px);
+    display: flex;
+    align-items: center;
+}
+.body_field--link{
+    text-decoration: none;
+    color: inherit;
+}
+.logoIoasys{
+    width: 234.2px;
+    margin-top: 49px;
+    margin-bottom: 45px;
+    height: 57px;
+    align-self: center;
+}
+.icLupa{
+    height: 50px;
+    width: 50px;
+}
+.searchForm{
+    display: flex;
+    text-align: center;
+    border-bottom: 0.7px solid #383743;
+    height: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    width: 95%
+}
+.searchForm__field{
+    display: flex;
+    width: 80%;
+}
+#search{
+    background-color: transparent;
+    border: none;
+    width: 86vw;
+    color: white;
+    
+}
+::placeholder{
+    color: #383743;
+}

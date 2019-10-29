@@ -1,0 +1,25 @@
+.topMain{
+    width: 100%;
+    height: 151px;
+    background-image: linear-gradient(180deg, #ee4c77 10%, #0d0430 300%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.icBack{
+    display: flex;
+    margin-right: auto;
+    align-self: center;
+    height: 30px;
+    width: 15px;
+    padding-left: 1%;
+}
+
+.bigCard{
+    display: flex;
+}
+
+.logoIoasys{ 
+    margin-right: auto;
+
+}
