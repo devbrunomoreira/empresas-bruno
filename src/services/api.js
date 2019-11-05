@@ -2,7 +2,7 @@ import axios from "axios";
 import { getToken } from "./auth";
 
 const api = axios.create({
-  baseURL: "https://empresas.ioasys.com.br/api/v1/users/auth/sign_in"
+  baseURL: "https://empresas.ioasys.com.br/api/v1/"
 });
 
 api.interceptors.request.use(async config => {

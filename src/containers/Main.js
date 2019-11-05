@@ -20,7 +20,8 @@ class Main extends Component {
         this.handleSearch = this.handleSearch.bind(this);
     }
     handleSearch() {
-        this.setState({ isSearching: !this.state.isSearching });
+        this.setState({ isSearching: !this.state.isSearching, 
+                        search: '' });
         this.handleContentSearch()
     }
     takeInfoSearch(event) {
@@ -75,7 +76,7 @@ class Main extends Component {
                         <div className="body_field">Clique na busca para iniciar</div>
                     ) : (
                         this.state.enterpriseList.filter((item)=>(
-                            item.enterprise_name.includes(this.state.search)
+                            item.enterprise_name.toUpperCase().includes(this.state.search.toUpperCase())
                         )).map(enterprise => (
                                 <Link key={enterprise.id} className="body_field--link" to={'/maincard/'+ enterprise.id} > 
                                 <Card 
