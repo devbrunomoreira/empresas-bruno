@@ -5,7 +5,6 @@ import icLupa from '../assets/imgs/ic-search.svg'
 import icClose from '../assets/imgs/ic-close.svg'
 import icEnterprise from '../assets/imgs/img-e-1-lista.svg'
 import Card from '../components/Card'
-import CardBig from '../components/CardBig'
 import '../assets/styles/Main.scss'
 import axios from 'axios'
 
@@ -27,7 +26,6 @@ class Main extends Component {
     takeInfoSearch(event) {
         this.setState({ search: event.target.value })
     }
-    
     handleContentSearch(){
         axios.get(
             "https://empresas.ioasys.com.br/api/v1/enterprises",
@@ -46,7 +44,6 @@ class Main extends Component {
           });
     }
     render() {
-        
         return (
             <div className="site">
                 <div className="top">
