@@ -7,18 +7,38 @@ import icEnterprise from '../assets/imgs/img-e-1-lista.svg'
 import json from '../mock.json'
 import CardBig from '../components/CardBig'
 import '../assets/styles/MainBigCard.scss'
+import axios from 'axios'
 
 class MainBigCard extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            idCard: this.props.match.params.id
+            idCard: this.props.match.params.id,
+            enterpriseName: '',
+            enterpriseText: '',
+            imgEnterprise: ''
         };
     }
+    componentDidMount(){
+        axios.get(
+            "https://empresas.ioasys.com.br/api/v1/enterprises/" + this.state.idCard,
+            { headers: { "Content-Type": "application/json",
+            "access-token": localStorage.getItem("userToken"),
+            "client": localStorage.getItem("userClient"),
+            'uid': localStorage.getItem("userID") } }
+          )
+          .then(response => {
+            this.setState({ enterpriseName: response.data.enterprise.enterprise_name ,
+                            enterpriseText: response.data.enterprise.description,
+                            imgEnterprise: response.data.enterprise.photo})
+          })
+          .catch(function(error) {
+            console.error(
+              "There has been a problem with your fetch operation: " + error
+            );
+          });
+    }
     render() {
-        let enterpriseFilter = json.enterprises.find(enterprise => {
-            return enterprise.id == this.state.idCard
-        })
         return (
             <div className="site">
                 <div className="topMain">
@@ -29,7 +49,7 @@ class MainBigCard extends Component {
                 </div>
                 <div className="body" >
                     <div className="bigCard">
-                        <CardBig textEnterprise={enterpriseFilter.description} 
+                        <CardBig textEnterprise={this.state.enterpriseText} 
                             imgEnterpriseBig={icEnterprise} />
                     </div>
                 </div>

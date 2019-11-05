@@ -24,8 +24,8 @@ const Routes = () => (
   <BrowserRouter>
     <Switch>
       <Route path="/maincard/:id" component={MainBigCard} />
-      <Route path="/main" component={Main} />
-      <Route path="/" component={Login} />
+      <Route exact path="/main" component={Main} />
+      <Route exact path="/" component={Login} />
     </Switch>
   </BrowserRouter>
 );

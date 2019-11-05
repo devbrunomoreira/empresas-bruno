@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import logoIoasys from "../assets/imgs/logo-home.png";
 import logoEmail from "../assets/imgs/ic-email.png";
 import logoCadeado from "../assets/imgs/ic-cadeado.png";
@@ -8,9 +9,8 @@ export class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: "testeapple@ioasys.com.br",
-      password: "12341234",
-      token: ""
+      email: "",
+      password: ""
     };
     this.setDataLogin = this.setDataLogin.bind(this);
     this.setDataPassword = this.setDataPassword.bind(this);
@@ -32,8 +32,12 @@ export class Login extends Component {
         { headers: { "Content-Type": "application/json" } }
       )
       .then(response => {
-        this.setState({ token: response.token });
-        localStorage.setItem("userToken", response.token);
+        console.log(response)
+        localStorage.setItem("userToken", response.headers['access-token']);
+        localStorage.setItem("userClient", response.headers['client'])
+        localStorage.setItem("userID", response.headers['uid'])
+
+        this.props.history.push("/main")
       })
       .catch(function(error) {
         console.error(
@@ -72,7 +76,7 @@ export class Login extends Component {
           <input
             id="password"
             onChange={this.setDataPassword}
-            type="text"
+            type="password"
             className="form-control"
             name="password"
             placeholder="Senha"

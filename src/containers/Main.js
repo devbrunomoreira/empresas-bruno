@@ -7,23 +7,45 @@ import icEnterprise from '../assets/imgs/img-e-1-lista.svg'
 import Card from '../components/Card'
 import CardBig from '../components/CardBig'
 import '../assets/styles/Main.scss'
-import json from '../mock.json'
+import axios from 'axios'
+
 class Main extends Component {
     constructor(props) {
         super(props)
         this.state = {
             isSearching: false,
-            search: ''
+            search: '',
+            enterpriseList: []
         };
         this.handleSearch = this.handleSearch.bind(this);
     }
     handleSearch() {
         this.setState({ isSearching: !this.state.isSearching });
+        this.handleContentSearch()
     }
     takeInfoSearch(event) {
         this.setState({ search: event.target.value })
     }
+    
+    handleContentSearch(){
+        axios.get(
+            "https://empresas.ioasys.com.br/api/v1/enterprises",
+            { headers: { "Content-Type": "application/json",
+            "access-token": localStorage.getItem("userToken"),
+            "client": localStorage.getItem("userClient"),
+            'uid': localStorage.getItem("userID") } }
+          )
+          .then(response => {
+            this.setState({ enterpriseList: response.data.enterprises})
+          })
+          .catch(function(error) {
+            console.error(
+              "There has been a problem with your fetch operation: " + error
+            );
+          });
+    }
     render() {
+        
         return (
             <div className="site">
                 <div className="top">
@@ -41,7 +63,7 @@ class Main extends Component {
                                 <div className="searchForm">
                                     <div className="searchForm__field">
                                         <img src={icLupa} className="icLupaSearch" alt="lupa" />
-                                        <input id="search" type="text" placeholder="Pesquisar" />
+                                        <input id="search" type="text" placeholder="Pesquisar" onChange={this.takeInfoSearch.bind(this)} />
                                     </div>
                                     <img src={icClose} className="icClose" alt="fechar" onClick={this.handleSearch} />
                                 </div>
@@ -52,9 +74,12 @@ class Main extends Component {
                     {!this.state.isSearching ? (
                         <div className="body_field">Clique na busca para iniciar</div>
                     ) : (
-                        json.enterprises.map(enterprise => (
-                                <Link className="body_field--link" to={'/maincard/'+ enterprise.id} > 
+                        this.state.enterpriseList.filter((item)=>(
+                            item.enterprise_name.includes(this.state.search)
+                        )).map(enterprise => (
+                                <Link key={enterprise.id} className="body_field--link" to={'/maincard/'+ enterprise.id} > 
                                 <Card 
+                                
                                  imgEnterprise={icEnterprise} 
                                  nameEnterprise={enterprise.enterprise_name} 
                                  typeEnterprise={enterprise.enterprise_type.enterprise_type_name} 
