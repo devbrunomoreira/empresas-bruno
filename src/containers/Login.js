@@ -69,7 +69,6 @@ export class Login extends Component {
             </p>
           </div>
         </div>
-        
         <div id="emailForm">
           <img src={logoEmail} className="icEmail" />
           <input
