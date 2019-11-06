@@ -3,8 +3,11 @@ import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import logoIoasys from "../assets/imgs/logo-home.png";
 import logoEmail from "../assets/imgs/ic-email.png";
 import logoCadeado from "../assets/imgs/ic-cadeado.png";
-import axios from "axios";
+import Api from "../services/api"
 import "../assets/styles/Login.scss";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 export class Login extends Component {
   constructor(props) {
     super(props);
@@ -24,22 +27,20 @@ export class Login extends Component {
     this.setState({ password: event.target.value });
   }
   getEnter(event){
-    this.setDataPassword(event)
     let input = document.getElementById("password");
     input.addEventListener("keyup", (event) => {
       if (event.keyCode === 13) {
-        this.requestAccessToken()
+        this.requestAccessToken();
       }
     });
   }
   requestAccessToken(email, password) {
-    return axios.post(
-        "https://empresas.ioasys.com.br/api/v1/users/auth/sign_in",
+    return Api.post(
+        "/users/auth/sign_in",
         {
           email: this.state.email,
           password: this.state.password
         },
-        { headers: { "Content-Type": "application/json" } }
       )
       .then(response => {
         localStorage.setItem("userToken", response.headers['access-token']);
@@ -48,14 +49,28 @@ export class Login extends Component {
 
         this.props.history.push("/main")
       })
-      .catch(function(error) {
-        console.error(
-          "There has been a big problem with your fetch operation: " + error
-        );
+      .catch(error => {
+        this.handleErrorMessage(error.message)
       });
   }
+  handleErrorMessage(errorMessage){
+    let errorMsg = '';
+    if(errorMessage === 'Request failed with status code 401'){
+      errorMsg = 'Usuário ou senha errado'
+    }
+    if(errorMessage === 'Network Error'){
+      errorMsg = 'Servidor fora do ar'
+    }
+    toast.error(errorMsg)
+  }
+    
+  
   render() {
+    
     return (
+      <>
+      <ToastContainer />
+      
       <div className="App">
         <div className="App-header">
           <div className="App-header__field">
@@ -84,17 +99,20 @@ export class Login extends Component {
           <img src={logoCadeado} className="icEmail" />
           <input
             id="password"
-            onChange={this.getEnter}
+            onChange={this.setDataPassword}
             type="password"
             className="form-control"
             name="password"
             placeholder="Senha"
+            onKeyUp={this.getEnter}
           />
         </div>
         <button id="buttonLogin" onClick={this.requestAccessToken}>
           Entrar
         </button>
       </div>
+      
+      </>
     );
   }
 }
