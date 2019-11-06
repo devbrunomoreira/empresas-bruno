@@ -27,7 +27,6 @@ export class Login extends Component {
     this.setDataPassword(event)
     let input = document.getElementById("password");
     input.addEventListener("keyup", (event) => {
-    // Number 13 is the "Enter" key on the keyboard
       if (event.keyCode === 13) {
         this.requestAccessToken()
       }
