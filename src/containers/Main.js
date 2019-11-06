@@ -5,9 +5,10 @@ import icLupa from '../assets/imgs/ic-search.svg'
 import icClose from '../assets/imgs/ic-close.svg'
 import icEnterprise from '../assets/imgs/img-e-1-lista.svg'
 import Card from '../components/Card'
-import '../assets/styles/Main.scss'
-import axios from 'axios'
 import Api from '../services/api'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import '../assets/styles/Main.scss'
 
 class Main extends Component {
     constructor(props) {
@@ -57,9 +58,7 @@ class Main extends Component {
             this.setState({ enterpriseList: response.data.enterprises})
           })
           .catch(function(error) {
-            console.error(
-              "There has been a problem with your fetch operation: " + error
-            );
+            toast.error(error.message)
           });
     }
     handleSearchAPI(){
@@ -78,9 +77,7 @@ class Main extends Component {
                 this.setState({enterpriseList: response.data.enterprises});
               })
               .catch(function(error) {
-                console.error(
-                  "There has been a huge problem with your fetch operation: " + error
-                );
+                toast.error(error.message)
               });
         }, 1000);
         };
@@ -88,6 +85,7 @@ class Main extends Component {
     render() {
         return (
             <div className="site">
+            <ToastContainer />
                 <div className="top">
                     {!this.state.isSearching ? (
                         <>

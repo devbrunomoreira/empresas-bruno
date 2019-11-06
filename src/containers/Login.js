@@ -4,9 +4,9 @@ import logoIoasys from "../assets/imgs/logo-home.png";
 import logoEmail from "../assets/imgs/ic-email.png";
 import logoCadeado from "../assets/imgs/ic-cadeado.png";
 import Api from "../services/api"
-import "../assets/styles/Login.scss";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import "../assets/styles/Login.scss";
 
 export class Login extends Component {
   constructor(props) {
@@ -63,14 +63,10 @@ export class Login extends Component {
     }
     toast.error(errorMsg)
   }
-    
-  
   render() {
-    
     return (
       <>
       <ToastContainer />
-      
       <div className="App">
         <div className="App-header">
           <div className="App-header__field">
@@ -111,7 +107,6 @@ export class Login extends Component {
           Entrar
         </button>
       </div>
-      
       </>
     );
   }
