@@ -14,19 +14,37 @@ class Main extends Component {
         this.state = {
             isSearching: false,
             search: '',
-            enterpriseList: []
+            enterpriseList: [],
+            dirtyData: false
         };
         this.handleSearch = this.handleSearch.bind(this);
+        this.handleSearchClose = this.handleSearchClose.bind(this);
+        this.takeInfoSearch = this.takeInfoSearch.bind(this);
     }
     handleSearch() {
         this.setState({ isSearching: !this.state.isSearching, 
                         search: '' });
-        this.handleContentSearch()
+        this.checkDirtyData()
+    }
+    handleSearchClose() {
+        this.setState({ isSearching: !this.state.isSearching, 
+                        search: '',
+                     dirtyData: true});
+        
+        this.checkDirtyData()
+    }
+    checkDirtyData(){
+        if(this.state.dirtyData === true){
+            this.getAllData()
+        }
     }
     takeInfoSearch(event) {
         this.setState({ search: event.target.value })
     }
-    handleContentSearch(){
+    componentDidMount(){
+        this.getAllData()
+    }
+    getAllData() {
         axios.get(
             "https://empresas.ioasys.com.br/api/v1/enterprises",
             { headers: { "Content-Type": "application/json",
@@ -42,6 +60,30 @@ class Main extends Component {
               "There has been a problem with your fetch operation: " + error
             );
           });
+    }
+    handleSearchAPI(){
+        let textInput = document.getElementById('search');
+        let timeout = null;
+        textInput.onkeyup = (e) => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() =>  {
+            axios.get(
+                "https://empresas.ioasys.com.br/api/v1/enterprises?&name=" + textInput.value,
+                { headers: { "Content-Type": "application/json",
+                "access-token": localStorage.getItem("userToken"),
+                "client": localStorage.getItem("userClient"),
+                'uid': localStorage.getItem("userID") } }
+              )
+              .then(response => {
+                this.setState({enterpriseList: response.data.enterprises})
+              })
+              .catch(function(error) {
+                console.error(
+                  "There has been a huge problem with your fetch operation: " + error
+                );
+              });
+        }, 1000);
+        };
     }
     render() {
         return (
@@ -61,9 +103,9 @@ class Main extends Component {
                                 <div className="searchForm">
                                     <div className="searchForm__field">
                                         <img src={icLupa} className="icLupaSearch" alt="lupa" />
-                                        <input id="search" type="text" placeholder="Pesquisar" onChange={this.takeInfoSearch.bind(this)} />
+                                        <input id="search" onFocus={this.handleSearchAPI.bind(this)} type="text" placeholder="Pesquisar" onChange={this.takeInfoSearch} />
                                     </div>
-                                    <img src={icClose} className="icClose" alt="fechar" onClick={this.handleSearch} />
+                                    <img src={icClose} className="icClose" alt="fechar" onClick={this.handleSearchClose} />
                                 </div>
                             </>
                         )}
@@ -72,12 +114,9 @@ class Main extends Component {
                     {!this.state.isSearching ? (
                         <div className="body_field">Clique na busca para iniciar</div>
                     ) : (
-                        this.state.enterpriseList.filter((item)=>(
-                            item.enterprise_name.toUpperCase().includes(this.state.search.toUpperCase())
-                        )).map(enterprise => (
+                        this.state.enterpriseList.map(enterprise => (
                                 <Link key={enterprise.id} className="body_field--link" to={'/maincard/'+ enterprise.id} > 
                                 <Card 
-                                
                                  imgEnterprise={icEnterprise} 
                                  nameEnterprise={enterprise.enterprise_name} 
                                  typeEnterprise={enterprise.enterprise_type.enterprise_type_name} 

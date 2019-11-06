@@ -15,12 +15,23 @@ export class Login extends Component {
     this.setDataLogin = this.setDataLogin.bind(this);
     this.setDataPassword = this.setDataPassword.bind(this);
     this.requestAccessToken = this.requestAccessToken.bind(this);
+    this.getEnter = this.getEnter.bind(this);
   }
   setDataLogin(event) {
     this.setState({ email: event.target.value });
   }
   setDataPassword(event) {
     this.setState({ password: event.target.value });
+  }
+  getEnter(event){
+    this.setDataPassword(event)
+    let input = document.getElementById("password");
+    input.addEventListener("keyup", (event) => {
+    // Number 13 is the "Enter" key on the keyboard
+      if (event.keyCode === 13) {
+        this.requestAccessToken()
+      }
+    });
   }
   requestAccessToken(email, password) {
     return axios.post(
@@ -32,7 +43,6 @@ export class Login extends Component {
         { headers: { "Content-Type": "application/json" } }
       )
       .then(response => {
-        console.log(response)
         localStorage.setItem("userToken", response.headers['access-token']);
         localStorage.setItem("userClient", response.headers['client'])
         localStorage.setItem("userID", response.headers['uid'])
@@ -60,6 +70,7 @@ export class Login extends Component {
             </p>
           </div>
         </div>
+        
         <div id="emailForm">
           <img src={logoEmail} className="icEmail" />
           <input
@@ -75,7 +86,7 @@ export class Login extends Component {
           <img src={logoCadeado} className="icEmail" />
           <input
             id="password"
-            onChange={this.setDataPassword}
+            onChange={this.getEnter}
             type="password"
             className="form-control"
             name="password"
