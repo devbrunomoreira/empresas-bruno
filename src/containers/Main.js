@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {  Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import logoIoasys from '../assets/imgs/logo-nav.png'
 import icLupa from '../assets/imgs/ic-search.svg'
 import icClose from '../assets/imgs/ic-close.svg'
