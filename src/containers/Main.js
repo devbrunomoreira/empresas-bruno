@@ -7,6 +7,7 @@ import icEnterprise from '../assets/imgs/img-e-1-lista.svg'
 import icLogout from '../assets/imgs/logout.svg'
 import Card from '../components/Card'
 import Api from '../services/api'
+import { logout } from '../services/auth'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../assets/styles/Main.scss'
@@ -24,6 +25,7 @@ class Main extends Component {
         this.handleSearchClose = this.handleSearchClose.bind(this);
         this.takeInfoSearch = this.takeInfoSearch.bind(this);
         this.handleSearchAPI = this.handleSearchAPI.bind(this);
+        this.handleLogout = this.handleLogout.bind(this);
     }
     handleSearch() {
         this.setState({ isSearching: !this.state.isSearching, 
@@ -83,6 +85,10 @@ class Main extends Component {
         }, 1000);
         };
     }
+    handleLogout() {
+        logout();
+        this.props.history.push("/")
+    }
     render() {
         return (
             <div className="site">
@@ -92,7 +98,7 @@ class Main extends Component {
                         <>
                         <div className="top__field"> 
                             <div className="top__field--logout" >
-                                <img src={icLogout} className="icLogout" alt="logout" onClick={console.log("sair")} />
+                                <img src={icLogout} className="icLogout" alt="logout" onClick={this.handleLogout} />
                             </div>
                             <div className="top__field--logo" >
                                 <img src={logoIoasys} className="logoIoasys" alt="logo" />
@@ -101,7 +107,6 @@ class Main extends Component {
                                 <img src={icLupa} className="icLupa" alt="lupa" onClick={this.handleSearch} />
                             </div>
                         </div>
-                            
                         </>
                     ) : (
                             <>

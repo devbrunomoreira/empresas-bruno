@@ -46,7 +46,6 @@ export class Login extends Component {
         localStorage.setItem("userToken", response.headers['access-token']);
         localStorage.setItem("userClient", response.headers['client'])
         localStorage.setItem("userID", response.headers['uid'])
-
         this.props.history.push("/main")
       })
       .catch(error => {
