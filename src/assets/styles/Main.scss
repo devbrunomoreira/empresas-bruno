@@ -18,11 +18,13 @@ body {
     
 }
 .top__field{
-    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: inherit;
 }
 .top__field--search{
-    align-self: center;
-    margin-left: auto;
+    
 }
 .body{
     background-color: #ebe9d7;
@@ -50,6 +52,11 @@ body {
 .icLupa{
     height: 50px;
     width: 50px;
+}
+.icLogout{
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
 }
 .searchForm{
     display: flex;

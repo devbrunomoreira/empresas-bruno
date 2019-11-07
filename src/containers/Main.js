@@ -4,6 +4,7 @@ import logoIoasys from '../assets/imgs/logo-nav.png'
 import icLupa from '../assets/imgs/ic-search.svg'
 import icClose from '../assets/imgs/ic-close.svg'
 import icEnterprise from '../assets/imgs/img-e-1-lista.svg'
+import icLogout from '../assets/imgs/logout.svg'
 import Card from '../components/Card'
 import Api from '../services/api'
 import { ToastContainer, toast } from 'react-toastify';
@@ -90,11 +91,17 @@ class Main extends Component {
                     {!this.state.isSearching ? (
                         <>
                         <div className="top__field"> 
-                            <img src={logoIoasys} className="logoIoasys" alt="logo" />
-                        </div>
+                            <div className="top__field--logout" >
+                                <img src={icLogout} className="icLogout" alt="logout" onClick={console.log("sair")} />
+                            </div>
+                            <div className="top__field--logo" >
+                                <img src={logoIoasys} className="logoIoasys" alt="logo" />
+                            </div>
                             <div className="top__field--search">
                                 <img src={icLupa} className="icLupa" alt="lupa" onClick={this.handleSearch} />
                             </div>
+                        </div>
+                            
                         </>
                     ) : (
                             <>
