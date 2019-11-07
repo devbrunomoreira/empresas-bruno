@@ -3,8 +3,11 @@ import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import logoIoasys from "../assets/imgs/logo-home.png";
 import logoEmail from "../assets/imgs/ic-email.png";
 import logoCadeado from "../assets/imgs/ic-cadeado.png";
-import axios from "axios";
+import Api from "../services/api"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "../assets/styles/Login.scss";
+
 export class Login extends Component {
   constructor(props) {
     super(props);
@@ -15,6 +18,7 @@ export class Login extends Component {
     this.setDataLogin = this.setDataLogin.bind(this);
     this.setDataPassword = this.setDataPassword.bind(this);
     this.requestAccessToken = this.requestAccessToken.bind(this);
+    this.getEnter = this.getEnter.bind(this);
   }
   setDataLogin(event) {
     this.setState({ email: event.target.value });
@@ -22,31 +26,47 @@ export class Login extends Component {
   setDataPassword(event) {
     this.setState({ password: event.target.value });
   }
+  getEnter(event){
+    let input = document.getElementById("password");
+    input.addEventListener("keyup", (event) => {
+      if (event.keyCode === 13) {
+        this.requestAccessToken();
+      }
+    });
+  }
   requestAccessToken(email, password) {
-    return axios.post(
-        "https://empresas.ioasys.com.br/api/v1/users/auth/sign_in",
+    return Api.post(
+        "/users/auth/sign_in",
         {
           email: this.state.email,
           password: this.state.password
         },
-        { headers: { "Content-Type": "application/json" } }
       )
       .then(response => {
-        console.log(response)
         localStorage.setItem("userToken", response.headers['access-token']);
         localStorage.setItem("userClient", response.headers['client'])
         localStorage.setItem("userID", response.headers['uid'])
 
         this.props.history.push("/main")
       })
-      .catch(function(error) {
-        console.error(
-          "There has been a big problem with your fetch operation: " + error
-        );
+      .catch(error => {
+        this.handleErrorMessage(error.message)
       });
+  }
+  handleErrorMessage(errorMessage){
+    let errorMsg = '';
+    if(errorMessage === 'Request failed with status code 401'){
+      errorMsg = 'Usuário ou senha errado'
+    }
+    if(errorMessage === 'Network Error'){
+      errorMsg = 'Servidor fora do ar'
+    }
+    toast.error(errorMsg)
   }
   render() {
     return (
+      <>
+      <ToastContainer />
       <div className="App">
         <div className="App-header">
           <div className="App-header__field">
@@ -80,12 +100,14 @@ export class Login extends Component {
             className="form-control"
             name="password"
             placeholder="Senha"
+            onKeyUp={this.getEnter}
           />
         </div>
         <button id="buttonLogin" onClick={this.requestAccessToken}>
           Entrar
         </button>
       </div>
+      </>
     );
   }
 }
