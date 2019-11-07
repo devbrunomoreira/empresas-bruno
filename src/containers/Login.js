@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import logoIoasys from "../assets/imgs/logo-home.png";
 import logoEmail from "../assets/imgs/ic-email.png";
 import logoCadeado from "../assets/imgs/ic-cadeado.png";
@@ -80,7 +79,7 @@ export class Login extends Component {
           </div>
         </div>
         <div id="emailForm">
-          <img src={logoEmail} className="icEmail" />
+          <img src={logoEmail} className="icEmail" alt="icEmail"/>
           <input
             id="email"
             onChange={this.setDataLogin}
@@ -91,7 +90,7 @@ export class Login extends Component {
           />
         </div>
         <div id="passwordForm">
-          <img src={logoCadeado} className="icEmail" />
+          <img src={logoCadeado} className="icEmail" alt="icCadeado" />
           <input
             id="password"
             onChange={this.setDataPassword}

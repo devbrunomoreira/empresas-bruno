@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import logoIoasys from '../assets/imgs/logo-nav.png'
 import icBack from '../assets/imgs/icBack.png'
 import icEnterprise from '../assets/imgs/img-e-1-lista.svg'
