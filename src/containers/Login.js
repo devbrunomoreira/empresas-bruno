@@ -60,7 +60,7 @@ export class Login extends Component {
       errorMsg = 'Usuário ou senha errado'
     }
     if(errorMessage === 'Network Error'){
-      errorMsg = 'Servidor fora do ar'
+      errorMsg = 'API fora do ar'
     }
     toast.error(errorMsg)
   }
