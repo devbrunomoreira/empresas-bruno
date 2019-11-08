@@ -12,7 +12,8 @@ export class Login extends Component {
     super(props);
     this.state = {
       email: "",
-      password: ""
+      password: "",
+      sendLogin: false
     };
     this.setDataLogin = this.setDataLogin.bind(this);
     this.setDataPassword = this.setDataPassword.bind(this);
@@ -28,8 +29,9 @@ export class Login extends Component {
   getEnter(event){
     let input = document.getElementById("password");
     input.addEventListener("keyup", (event) => {
-      if (event.keyCode === 13) {
+      if (event.keyCode == 13 && this.state.sendLogin == false) {
         this.requestAccessToken();
+        this.setState({ sendLogin: true})
       }
     });
   }
@@ -49,6 +51,7 @@ export class Login extends Component {
       })
       .catch(error => {
         this.handleErrorMessage(error.message)
+        this.setState({ sendLogin: false})
       });
   }
   handleErrorMessage(errorMessage){
