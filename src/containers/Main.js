@@ -7,7 +7,7 @@ import icEnterprise from '../assets/imgs/img-e-1-lista.svg'
 import icLogout from '../assets/imgs/logout.svg'
 import Card from '../components/Card'
 import Api from '../services/api'
-import { logout } from '../services/auth'
+import { logout , TOKEN_KEY, USER_CLIENT, USER_ID } from '../services/auth'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../assets/styles/Main.scss'
@@ -53,9 +53,9 @@ class Main extends Component {
     getAllData() {
         Api.get(
             "/enterprises",
-            { headers: { "access-token": localStorage.getItem("userToken"),
-            "client": localStorage.getItem("userClient"),
-            'uid': localStorage.getItem("userID") } }
+            { headers: { "access-token": localStorage.getItem(TOKEN_KEY),
+            "client": localStorage.getItem(USER_CLIENT),
+            'uid': localStorage.getItem(USER_ID) } }
           )
           .then(response => {
             this.setState({ enterpriseList: response.data.enterprises})
@@ -72,9 +72,9 @@ class Main extends Component {
         timeout = setTimeout(() =>  {
            Api.get(
                 "enterprises?&name=" + textInput.value,
-                { headers: { "access-token": localStorage.getItem("userToken"),
-                "client": localStorage.getItem("userClient"),
-                'uid': localStorage.getItem("userID") } }
+                { headers: { "access-token": localStorage.getItem(TOKEN_KEY),
+                "client": localStorage.getItem(USER_CLIENT),
+                'uid': localStorage.getItem(USER_ID) } }
               )
               .then(response => {
                 this.setState({enterpriseList: response.data.enterprises});
@@ -87,7 +87,7 @@ class Main extends Component {
     }
     handleLogout() {
         logout();
-        this.props.history.push("/")
+        this.props.history.push("/");
     }
     render() {
         return (

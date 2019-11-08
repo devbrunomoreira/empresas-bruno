@@ -6,6 +6,7 @@ import icEnterprise from '../assets/imgs/img-e-1-lista.svg'
 import CardBig from '../components/CardBig'
 import '../assets/styles/MainBigCard.scss'
 import Api from '../services/api'
+import {TOKEN_KEY , USER_CLIENT, USER_ID} from '../services/auth'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 class MainBigCard extends Component {
@@ -22,9 +23,9 @@ class MainBigCard extends Component {
         Api.get(
             "/enterprises/" + this.state.idCard,
             { headers: { "Content-Type": "application/json",
-            "access-token": localStorage.getItem("userToken"),
-            "client": localStorage.getItem("userClient"),
-            'uid': localStorage.getItem("userID") } }
+            "access-token": localStorage.getItem(TOKEN_KEY),
+            "client": localStorage.getItem(USER_CLIENT),
+            'uid': localStorage.getItem(USER_ID) } }
           )
           .then(response => {
             this.setState({ enterpriseName: response.data.enterprise.enterprise_name ,
@@ -32,7 +33,7 @@ class MainBigCard extends Component {
                             imgEnterprise: response.data.enterprise.photo})
           })
           .catch(function(error) {
-            toast.error(error.message)
+            toast.error(error.message);
           });
     }
     render() {
