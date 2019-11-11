@@ -5,7 +5,7 @@ class CardBig extends Component {
         return (
             <div className="cardBig">
                 <div className="cardBig__field" >
-                    <img src={this.props.imgEnterpriseBig} className="imgEnterpriseListBig" alt="imgEnterpriseListBig"/>
+                    <img src={this.props.imgEnterpriseBig} className="imgEnterpriseListBig" alt="Imagem da Empresa"/>
                     <div className="cardBig__field--text">{this.props.textEnterprise}</div>
                 </div>
             </div>

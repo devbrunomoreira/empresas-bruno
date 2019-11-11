@@ -81,7 +81,7 @@ export class Login extends Component {
           </div>
         </div>
         <div id="emailForm">
-          <img src={logoEmail} className="icEmail" alt="icEmail"/>
+          <img src={logoEmail} className="icEmail" alt="Email"/>
           <input
             id="email"
             onChange={this.setDataLogin}
@@ -92,7 +92,7 @@ export class Login extends Component {
           />
         </div>
         <div id="passwordForm">
-          <img src={logoCadeado} className="icEmail" alt="icCadeado" />
+          <img src={logoCadeado} className="icEmail" alt="Cadeado" />
           <input
             id="password"
             onChange={this.setDataPassword}
