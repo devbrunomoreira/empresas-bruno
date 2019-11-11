@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import logoIoasys from "../assets/imgs/logo-home.png";
 import logoEmail from "../assets/imgs/ic-email.png";
 import logoCadeado from "../assets/imgs/ic-cadeado.png";
 import Api from "../services/api"
+import { login } from '../services/auth'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "../assets/styles/Login.scss";
@@ -13,7 +13,8 @@ export class Login extends Component {
     super(props);
     this.state = {
       email: "",
-      password: ""
+      password: "",
+      sendLogin: false
     };
     this.setDataLogin = this.setDataLogin.bind(this);
     this.setDataPassword = this.setDataPassword.bind(this);
@@ -29,8 +30,9 @@ export class Login extends Component {
   getEnter(event){
     let input = document.getElementById("password");
     input.addEventListener("keyup", (event) => {
-      if (event.keyCode === 13) {
+      if (event.keyCode == 13 && this.state.sendLogin == false) {
         this.requestAccessToken();
+        this.setState({ sendLogin: true});
       }
     });
   }
@@ -43,25 +45,23 @@ export class Login extends Component {
         },
       )
       .then(response => {
-        localStorage.setItem("userToken", response.headers['access-token']);
-        localStorage.setItem("userClient", response.headers['client'])
-        localStorage.setItem("userID", response.headers['uid'])
-
-        this.props.history.push("/main")
+        login(response.headers['access-token'], response.headers['client'], response.headers['uid']);
+        this.props.history.push("/main");
       })
       .catch(error => {
-        this.handleErrorMessage(error.message)
+        this.handleErrorMessage(error.message);
+        this.setState({ sendLogin: false});
       });
   }
   handleErrorMessage(errorMessage){
     let errorMsg = '';
     if(errorMessage === 'Request failed with status code 401'){
-      errorMsg = 'Usuário ou senha errado'
+      errorMsg = 'Usuário ou senha errado';
     }
     if(errorMessage === 'Network Error'){
-      errorMsg = 'Servidor fora do ar'
+      errorMsg = 'API fora do ar';
     }
-    toast.error(errorMsg)
+    toast.error(errorMsg);
   }
   render() {
     return (
@@ -81,7 +81,7 @@ export class Login extends Component {
           </div>
         </div>
         <div id="emailForm">
-          <img src={logoEmail} className="icEmail" />
+          <img src={logoEmail} className="icEmail" alt="Email"/>
           <input
             id="email"
             onChange={this.setDataLogin}
@@ -92,7 +92,7 @@ export class Login extends Component {
           />
         </div>
         <div id="passwordForm">
-          <img src={logoCadeado} className="icEmail" />
+          <img src={logoCadeado} className="icEmail" alt="Cadeado" />
           <input
             id="password"
             onChange={this.setDataPassword}

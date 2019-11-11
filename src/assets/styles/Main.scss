@@ -18,11 +18,10 @@ body {
     
 }
 .top__field{
-    margin-left: auto;
-}
-.top__field--search{
-    align-self: center;
-    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: inherit;
 }
 .body{
     background-color: #ebe9d7;
@@ -51,6 +50,11 @@ body {
     height: 50px;
     width: 50px;
 }
+.icLogout{
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
+}
 .searchForm{
     display: flex;
     text-align: center;
@@ -65,12 +69,12 @@ body {
 }
 .searchForm__field{
     display: flex;
-    width: 80%;
+    width: 90%;
 }
 #search{
     background-color: transparent;
     border: none;
-    width: 86vw;
+    width: inherit;
     color: white;
     
 }

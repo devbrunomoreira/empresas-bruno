@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="293" height="160" viewBox="0 0 293 160">
+    <defs>
+        <path id="a" d="M0 0h292.368v160H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(.629)">
+        <mask id="b" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#7DC075" xlink:href="#a"/>
+        <text fill="#FFF" font-family="Roboto-Bold, Roboto" font-size="77" font-weight="bold" mask="url(#b)">
+            <tspan x="101" y="109">E1</tspan>
+        </text>
+    </g>
+</svg>

@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import logoIoasys from '../assets/imgs/logo-nav.png'
 import icLupa from '../assets/imgs/ic-search.svg'
 import icClose from '../assets/imgs/ic-close.svg'
 import icEnterprise from '../assets/imgs/img-e-1-lista.svg'
+import icLogout from '../assets/imgs/logout.svg'
 import Card from '../components/Card'
 import Api from '../services/api'
+import { logout , TOKEN_KEY, USER_CLIENT, USER_ID } from '../services/auth'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../assets/styles/Main.scss'
@@ -23,6 +25,7 @@ class Main extends Component {
         this.handleSearchClose = this.handleSearchClose.bind(this);
         this.takeInfoSearch = this.takeInfoSearch.bind(this);
         this.handleSearchAPI = this.handleSearchAPI.bind(this);
+        this.handleLogout = this.handleLogout.bind(this);
     }
     handleSearch() {
         this.setState({ isSearching: !this.state.isSearching, 
@@ -50,9 +53,9 @@ class Main extends Component {
     getAllData() {
         Api.get(
             "/enterprises",
-            { headers: { "access-token": localStorage.getItem("userToken"),
-            "client": localStorage.getItem("userClient"),
-            'uid': localStorage.getItem("userID") } }
+            { headers: { "access-token": localStorage.getItem(TOKEN_KEY),
+            "client": localStorage.getItem(USER_CLIENT),
+            'uid': localStorage.getItem(USER_ID) } }
           )
           .then(response => {
             this.setState({ enterpriseList: response.data.enterprises})
@@ -69,9 +72,9 @@ class Main extends Component {
         timeout = setTimeout(() =>  {
            Api.get(
                 "enterprises?&name=" + textInput.value,
-                { headers: { "access-token": localStorage.getItem("userToken"),
-                "client": localStorage.getItem("userClient"),
-                'uid': localStorage.getItem("userID") } }
+                { headers: { "access-token": localStorage.getItem(TOKEN_KEY),
+                "client": localStorage.getItem(USER_CLIENT),
+                'uid': localStorage.getItem(USER_ID) } }
               )
               .then(response => {
                 this.setState({enterpriseList: response.data.enterprises});
@@ -82,6 +85,10 @@ class Main extends Component {
         }, 1000);
         };
     }
+    handleLogout() {
+        logout();
+        this.props.history.push("/");
+    }
     render() {
         return (
             <div className="site">
@@ -90,11 +97,16 @@ class Main extends Component {
                     {!this.state.isSearching ? (
                         <>
                         <div className="top__field"> 
-                            <img src={logoIoasys} className="logoIoasys" alt="logo" />
-                        </div>
+                            <div className="top__field--logout" >
+                                <img src={icLogout} className="icLogout" alt="logout" onClick={this.handleLogout} />
+                            </div>
+                            <div className="top__field--logo" >
+                                <img src={logoIoasys} className="logoIoasys" alt="logo" />
+                            </div>
                             <div className="top__field--search">
                                 <img src={icLupa} className="icLupa" alt="lupa" onClick={this.handleSearch} />
                             </div>
+                        </div>
                         </>
                     ) : (
                             <>
