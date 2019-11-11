@@ -11,18 +11,17 @@ body {
     height: 100vh;
 }
 .top{
-    width: 100vw;
+    width: 100%;
     height: 151px;
     background-image: linear-gradient(180deg, #ee4c77 10%, #0d0430 300%);
     display: flex;
     
 }
 .top__field{
-    margin-left: auto;
-}
-.top__field--search{
-    align-self: center;
-    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: inherit;
 }
 .body{
     background-color: #ebe9d7;
@@ -51,6 +50,11 @@ body {
     height: 50px;
     width: 50px;
 }
+.icLogout{
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
+}
 .searchForm{
     display: flex;
     text-align: center;
@@ -65,12 +69,12 @@ body {
 }
 .searchForm__field{
     display: flex;
-    width: 80%;
+    width: 90%;
 }
 #search{
     background-color: transparent;
     border: none;
-    width: 86vw;
+    width: inherit;
     color: white;
     
 }
