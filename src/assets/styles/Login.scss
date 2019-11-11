@@ -1,11 +1,13 @@
 #email{
     background-color: transparent;
     border: none;
+    outline: none;
 }
   
 #password{
     background-color: transparent;
     border: none;
+    outline: none;
 }
 
 #buttonLogin{
@@ -28,6 +30,7 @@
     text-align: center;
     border-bottom: 0.7px solid #383743 ;
     margin-bottom: 37.5px;
+    
 }
 
 #passwordForm{
@@ -48,6 +51,8 @@
 
 .App-header__field{
     margin-bottom: 67px;
+    display: flex;
+    justify-content: center;
 }
 
 .App-header__field--content{

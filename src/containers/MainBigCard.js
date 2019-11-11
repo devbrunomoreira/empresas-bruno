@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import logoIoasys from '../assets/imgs/logo-nav.png'
 import icBack from '../assets/imgs/icBack.png'
-import icClose from '../assets/imgs/ic-close.svg'
 import icEnterprise from '../assets/imgs/img-e-1-lista.svg'
-import json from '../mock.json'
 import CardBig from '../components/CardBig'
 import '../assets/styles/MainBigCard.scss'
-import axios from 'axios'
-
+import Api from '../services/api'
+import {TOKEN_KEY , USER_CLIENT, USER_ID} from '../services/auth'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 class MainBigCard extends Component {
     constructor(props) {
         super(props)
@@ -20,12 +20,12 @@ class MainBigCard extends Component {
         };
     }
     componentDidMount(){
-        axios.get(
-            "https://empresas.ioasys.com.br/api/v1/enterprises/" + this.state.idCard,
+        Api.get(
+            "/enterprises/" + this.state.idCard,
             { headers: { "Content-Type": "application/json",
-            "access-token": localStorage.getItem("userToken"),
-            "client": localStorage.getItem("userClient"),
-            'uid': localStorage.getItem("userID") } }
+            "access-token": localStorage.getItem(TOKEN_KEY),
+            "client": localStorage.getItem(USER_CLIENT),
+            'uid': localStorage.getItem(USER_ID) } }
           )
           .then(response => {
             this.setState({ enterpriseName: response.data.enterprise.enterprise_name ,
@@ -33,14 +33,13 @@ class MainBigCard extends Component {
                             imgEnterprise: response.data.enterprise.photo})
           })
           .catch(function(error) {
-            console.error(
-              "There has been a problem with your fetch operation: " + error
-            );
+            toast.error(error.message);
           });
     }
     render() {
         return (
             <div className="site">
+                <ToastContainer />
                 <div className="topMain">
                     <Link className="icBack" to='/main'>
                         <img src={icBack} className="icBack" alt="voltar"  />
