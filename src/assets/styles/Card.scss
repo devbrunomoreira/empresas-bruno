@@ -1,0 +1,62 @@
+.card{
+    box-shadow: 1px 1px 1px 1px rgb(228,228,228);
+    padding: 16px;
+    background: rgb(250,250,250);
+    display: flex;
+    width: 70vw;
+    margin-top: 20px;
+    align-items: center;
+    max-width: 800px;
+    flex-wrap: wrap;
+}
+
+.card__field{
+    padding: 10px;
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imgEnterpriseList{
+    height: 15%;
+    width: 27%;
+    min-width: 200px;
+}
+
+.card__field--name{
+    font-family: Roboto;
+    margin: 4px;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+.card__field--type{
+    font-family: Roboto;
+    color: #8d8c8c;
+    margin: 4px;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+}
+.card__field--location{
+    font-family: Roboto;
+    color: #8d8c8c;
+    margin: 4px;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+}

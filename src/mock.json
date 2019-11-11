@@ -1,0 +1,1144 @@
+{
+    "enterprises": [
+        {
+            "id": 1,
+            "email_enterprise": "",
+            "facebook": "",
+            "twitter": "",
+            "linkedin": "",
+            "phone": "",
+            "own_enterprise": false,
+            "enterprise_name": "AllRide",
+            "photo": "/uploads/enterprise/photo/1/wood_trees_gloomy_fog_haze_darkness_50175_1920x1080.jpg",
+            "description": "Urbanatika is a socio-environmental company with economic impact, creator of the agro-urban industry. We want to involve people in the processes of healthy eating, recycling and reuse of organic waste and the creation of citizen green areas. With this we are creating smarter cities from the people and at the same time the forest city.  Urbanatika, Agro-Urban Industry",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 21,
+                "enterprise_type_name": "Software"
+            }
+        },
+        {
+            "id": 2,
+            "email_enterprise": "",
+            "facebook": "",
+            "twitter": "",
+            "linkedin": "",
+            "phone": "",
+            "own_enterprise": false,
+            "enterprise_name": "Alpaca Samka SpA",
+            "photo": "/uploads/enterprise/photo/2/WhatsApp_Image_2017-10-31_at_13.47.22.jpeg",
+            "description": "Alpaca Samka uses alpaca fibres for our “Slow Fashion Project” in association with the Aymaras of the Chilean Andes, producing sustainable luxury accessories and garments using traditional Andean methods and British weaving patterns. We are part of the Inward Investment Program and have been recognised by international organisations. ",
+            "city": "Viña del Mar",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 7,
+                "enterprise_type_name": "Fashion"
+            }
+        },
+        {
+            "id": 3,
+            "email_enterprise": "",
+            "facebook": "",
+            "twitter": "",
+            "linkedin": "",
+            "phone": "",
+            "own_enterprise": false,
+            "enterprise_name": "AnewLytics SpA",
+            "photo": "/uploads/enterprise/photo/3/thumb_8016a7d8a952351f3cb4d5f485f43ea1.octet-stream",
+            "description": " We have one passion: to create value for our customers by analyzing the conversations their customers have with the Contact Center in order to extract valuable and timely information to understand and meet their needs. That´s how AnewLytics was born: a cloud-based analytics service platform that performs 100% automated analysis.",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 18,
+                "enterprise_type_name": "Service"
+            }
+        },
+        {
+            "id": 4,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "AQM S.A.",
+            "photo": null,
+            "description": "Cold Killer was discovered by chance in the ´90 s and developed by Mrs. Inés Artozon Sylvester while she was 70 years old. Ending in a U.S. patent granted and a new company, AQM S.A. Diluted in water and applied to any vegetable leaves, stimulate increase glucose (sugar) up to 30% therefore help plants resists cold weather. ",
+            "city": "Maule",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 1,
+                "enterprise_type_name": "Agro"
+            }
+        },
+        {
+            "id": 5,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Árbol Sabores",
+            "photo": null,
+            "description": "We are Arbol Sabores, a new generation of healthy food that has a positive impact in the environment and society. We want to change the world through the feeding behaviors of the society, giving seeds of urban orchards in ours products and by innovating with biodegradable packing.",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 11,
+                "enterprise_type_name": "Health"
+            }
+        },
+        {
+            "id": 6,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "ArchDaily",
+            "photo": null,
+            "description": "Our mission is to improve the quality of life of the next 3 billion people living in cities by 2050, providing inspiration, knowledge, and tools to the architects who fill face this challenge.",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 14,
+                "enterprise_type_name": "Media"
+            }
+        },
+        {
+            "id": 7,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Aveeza",
+            "photo": null,
+            "description": "Aveeza is an intelligent platform specially developed for managing school transportation, anywhere. From real time ridership status, route optimisation, fleet maintenance to driver management, Aveeza brings world class logistics to school transportation, so the world’s most precious cargo, children, can be monitored in full transparency that the industry finally deserves.",
+            "city": "Providencia",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 24,
+                "enterprise_type_name": "Transport"
+            }
+        },
+        {
+            "id": 8,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "BREAL ESTATE SPA",
+            "photo": null,
+            "description": "Breal Estate is a Chilean company established in 2013, which, in a strategic alliance with Salesforce.com, initially developed an application for property management. Currently, BReal is an application that incorporates all the functions necessary to manage different processes of the real estate business: property management , sales, leases, common expenses and projects with the best practices in mind. It is delivered as a service (SaaS) and accessed via Internet from any device.",
+            "city": "SANTIAGO",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 17,
+                "enterprise_type_name": "Real Estate"
+            }
+        },
+        {
+            "id": 9,
+            "email_enterprise": "",
+            "facebook": "",
+            "twitter": "",
+            "linkedin": "",
+            "phone": "",
+            "own_enterprise": false,
+            "enterprise_name": "Capitalizarme.com",
+            "photo": "/uploads/enterprise/photo/9/cruzeiro.png",
+            "description": "We are a intermediary between developers in real estate and small investors who want to get good investment opportunities.  ",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 17,
+                "enterprise_type_name": "Real Estate"
+            }
+        },
+        {
+            "id": 10,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Capta Hydro",
+            "photo": null,
+            "description": "Capta Hydro is a clean energy technology startup that develops and commercialises hydropower technology for generation in artificial canals without the need of falls, that are economically competitive to other distributed generation alternatives and electric utility tariffs. Our BHAG is to install 1 GW of our technology  by 2027.",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 4,
+                "enterprise_type_name": "Eco"
+            }
+        },
+        {
+            "id": 11,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Ceptinel",
+            "photo": null,
+            "description": "Our product, Ceptinel Risk Manager, is a real-time business procecess monitoring system that, with the use of applied business rules algorithms, detects and notifies when potentially harmful or beneficial situations are detected.",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 8,
+                "enterprise_type_name": "Fintech"
+            }
+        },
+        {
+            "id": 12,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "CGS",
+            "photo": null,
+            "description": "Beyond Productivity: RMES is an asset Performance Management Software that helps capital intensive companies increase productivity through a better use of assets. This technology gets big ammount of data from equipment operation and failures and analyze it to identify improvement opportunities using complex algorithms.",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 21,
+                "enterprise_type_name": "Software"
+            }
+        },
+        {
+            "id": 13,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "ClicEduca",
+            "photo": null,
+            "description": "ClicEduca - Intesis is a technology development company for education.  Our multidisciplinary team works on RESEARCH AND DEVELOPMENT which has resulted in technological innovations available in educational institutions such as ClicEduca.com cloud and our star product, MusíGlota.  Our know-how philosophy is our base and driving force to develop high educational technology, enhancing teaching and learning processes with innovative solutions for teachers, students, administrators and family today. ",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 22,
+                "enterprise_type_name": "Technology"
+            }
+        },
+        {
+            "id": 14,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "CO2fine spa (egreen.green)",
+            "photo": null,
+            "description": "The business of changing the world into a green one is not an easy task. eGreen believes that by making things easy for users, the growth and impact of an environmentally friendly society can be greatly accelerated. eGreen's technology allows users to both calculate and offset their carbon footprint simply and free.  ",
+            "city": "Providencia",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 4,
+                "enterprise_type_name": "Eco"
+            }
+        },
+        {
+            "id": 15,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Coinaction",
+            "photo": null,
+            "description": "Coinaction provides worldwide cheaper currency exchange. ",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 8,
+                "enterprise_type_name": "Fintech"
+            }
+        },
+        {
+            "id": 16,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "CryptoMkt",
+            "photo": null,
+            "description": "CryptoMarket is a Chilean Fintech product created by both an engineer and a lawyer.    It is based on trust and development on Blockchain technology; CryptoMarket permits a new way of sending and receiving inmediatamente value, simple, trustworthy and safe,  integrating Chilean tradicional banking systems to the Blockchain. ",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 8,
+                "enterprise_type_name": "Fintech"
+            }
+        },
+        {
+            "id": 17,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Dathom.com",
+            "photo": null,
+            "description": "We started in 2015 a project that proposed to increase the quality of service of property brokers, but we realized that the market is flawed, bad practices, charges that are not justified, harm the clients, from this we develop a solution Which will move away from the current model and simplify the connection between a bidder and a plaintiff, develop an online collaborative market to market properties, allow all users to earn money by sharing links with an individualized offer on their social networks.",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 17,
+                "enterprise_type_name": "Real Estate"
+            }
+        },
+        {
+            "id": 18,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Diagnochip SpA",
+            "photo": null,
+            "description": "The Rapid  Antibiotic Sensitivty Kit  developed by Diagnochip allows  people having a urinary tract infection to receive the results of the proper antibiotic to use in only 8 hours versus the 3 to 4 days required by the traditional methodology.  Our kit has a big social impact as close the gap in the access to medical care for vulnerable people living in developing countries  and rural areas merging accuracity of the results with cost - efficiency.",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 3,
+                "enterprise_type_name": "Biotech"
+            }
+        },
+        {
+            "id": 19,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Fanclapp SpA",
+            "photo": null,
+            "description": "A platform dedicated to generated live content, allowing media, brands, agencies and events, acquire, manage and publish live-videos-streaming directly transmitted by fans themselves, at the time and where the action happens, given you the possibility and experience to live events from different points of view as many fans are transmitting",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 22,
+                "enterprise_type_name": "Technology"
+            }
+        },
+        {
+            "id": 20,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Fixthe System SPA",
+            "photo": null,
+            "description": "Bicicla, the smartest, cleanest and easiest way to recycle, the revolutionary recycle that change minds and behaviors based on citizens collaboration. We do see a shining future to our world.",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 19,
+                "enterprise_type_name": "Smart City"
+            }
+        },
+        {
+            "id": 21,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "frutnutspa",
+            "photo": null,
+            "description": "We are a R&D company , We are asociate with big manufacturer Company to test technology and domestic market acceptance . We are giving entrepreneurs services to acomplish goals in getting new products under quality certification and HACCP standards .We can give the scientific research to new food products under healthy and nutritional standards caring enviroment (sostain and recycling ), social and human rights and fairtrade standards . Our goal is having a ideas trade tank giving them chances and yield to allow any people invest in them t support their success.",
+            "city": "Villa alemana",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 9,
+                "enterprise_type_name": "Food"
+            }
+        },
+        {
+            "id": 22,
+            "email_enterprise": "",
+            "facebook": "",
+            "twitter": "",
+            "linkedin": "",
+            "phone": "",
+            "own_enterprise": false,
+            "enterprise_name": "Green Equitable",
+            "photo": "/uploads/enterprise/photo/22/diversas-imagens-fofas-50.jpg",
+            "description": "green equitable is a community (franchise) of  restaurants, stores and markets where regular  and conscious people can choose top healthy,  local, organic and fair trade products while  preserving the environment. ",
+            "city": "Las Condes",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 9,
+                "enterprise_type_name": "Food"
+            }
+        },
+        {
+            "id": 23,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "HoliPlay Games",
+            "photo": null,
+            "description": "HoliPlay Games is proud to present HoliMaths X, award winning family math games. A must have tool for families that understand how effective learning through playing can be.   Hi! I'm Matt from Holiplay Games!  HoliMaths X - a new family math strategy card game  We have an award winning game with 20+ outstanding reviews done by the most prominent Homeschoolers from the IHSNET network and other Parenting bloggers, communities and websites. It is the winner of the Academics' Choice Awards 2016 Winner! Brain Toy category. \nehind due to all the technology that surrounds us.\n",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 6,
+                "enterprise_type_name": "Education"
+            }
+        },
+        {
+            "id": 24,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "IMOVA",
+            "photo": null,
+            "description": "Experiencias de aprendizaje en realidad virtual; móviles, inmersivas y evolutivas",
+            "city": "Vitacura",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 21,
+                "enterprise_type_name": "Software"
+            }
+        },
+        {
+            "id": 25,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "jppy SPA",
+            "photo": null,
+            "description": "It is a guide to activities, tips and data, based on geolocation and user profile, structure the information so that the user can see the options and make a fast and efficient decision, thinking about their family. In a world full of blockbusters in activities, we are the Netflix ",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 14,
+                "enterprise_type_name": "Media"
+            }
+        },
+        {
+            "id": 26,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Kappo Bike",
+            "photo": null,
+            "description": "Kappo Bike is a platform that helps cities to increase the urban bicycle usage worldwide through gamification and safety navigation for citizens, wellness & CSR for companies and giving cyclists insight and predictive analytics for governments, enabling better planning and higher return on urban infrastructure investments.",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 19,
+                "enterprise_type_name": "Smart City"
+            }
+        },
+        {
+            "id": 27,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Kinemotion",
+            "photo": null,
+            "description": "Kinemotion is an Interactive Rehabilitation Platform that cuts down on time and monitors the performance of therapy for patients with physical disabilities, such as motor impairment, upper and lower extremity injuries, or stroke. Kinemotion helps patients who suffer disabilities physical, helping exercise therapies in an atmosphere of video games. Kinemotion detects, measures and corrects results. We help children and adults to exercise therapies so that they live in a happy and inclusive world.",
+            "city": "Concepción",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 22,
+                "enterprise_type_name": "Technology"
+            }
+        },
+        {
+            "id": 28,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "La Panería",
+            "photo": null,
+            "description": "I´m Florencia, a engineer and baker, and together with Constanza expert in gastronomy, we are the inventors and innovators that we have come to revolutionize the bakery market in Chile and in the rest of the world. We believe that it is a millennial product that has suffered a very low level of innovation and therefore we add in the process different vegetables, fruits, species, and everything you can imagine, to give new properties, flavors and colors to a product so consumed Like bread and also in a practical format!  Today in restaurants, cafes, hotels, airlines and even in your home you find the same thing; Traditional bread. La Panería breaks that concept, being innovative in the colors, flavors and properties, since it offers a product in which it integrates different vegetables, fruits and species, such as; Betarraga, Zapallo, Figs, Tomatoes, Nuts, Seeds, among many others in a frozen pre-baked format that allows you to enjoy a freshly baked gourmet bread in 8 minutes.  We create breads from Beet / Sesame, Pumpkin / Amapolas, Fig / Nut, Tomato / Basil , Wine. Without a doubt, cold technology is fundamental in our business. All our products are distributed with cold chain",
+            "city": "Peumo 211, Vitacura, Santiago, Chile",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 9,
+                "enterprise_type_name": "Food"
+            }
+        },
+        {
+            "id": 29,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Matchetune SpA",
+            "photo": null,
+            "description": "Matchetune is a word-game. \n\nMachitún (Mapuche word): sacred spirit healing ceremony practiced for thousands of years in Rukas.\n\nMatchetune (2 English words): Match and Tune.\n\nWe want to match with each other, with ourselves and with nature.\n\n…And to make fine-tuning with First Nations medicine and Worldview.\n",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 23,
+                "enterprise_type_name": "Tourism"
+            }
+        },
+        {
+            "id": 30,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "MercadoBirus.com",
+            "photo": null,
+            "description": "We believe that the world would be a better place to live in, if more companies were purpose-driven companies. There is a global trend of purpose-driven companies, aiming to solve a social and/or environmental challenges through their business. There’s also a growing number of consumers declaring to be “conscious” and wanting to know what they are consuming and which are the companies behind the products and services they prefer. Finally, these consumers are using more and more e-commerce to buy their products and services. The problem is that purpose-driven companies and conscious consumers don’t have a common place to find each other. BirusMarket.com is the online platform that allows conscious consumers, not only to find and get to know these purpose-driven companies, but also to buy their products and services. BirusMarket.com business model considers incomes from sales fee.",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 5,
+                "enterprise_type_name": "Ecommerce"
+            }
+        },
+        {
+            "id": 31,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Mineral Forecast",
+            "photo": null,
+            "description": "What if you could reduce cost and increase the probability of discoveries in mining exploration? In Mineral Forecast we do that by applying Artificial Intelligence algorithms, which enables the integration of information, identifying high probability areas of mineralization and optimize drill-holes campaigns, the main driver of cost in the mining exploration business. ",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 15,
+                "enterprise_type_name": "Mining"
+            }
+        },
+        {
+            "id": 32,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "NexAtlas",
+            "photo": null,
+            "description": "NexAtlas develops a \"Google Maps for aviation\" application for private and business aviation pilots. It considerably facilitates access and handling of the most important flight planning and air navigation related information.",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 2,
+                "enterprise_type_name": "Aviation"
+            }
+        },
+        {
+            "id": 33,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Notros",
+            "photo": null,
+            "description": "Boost Contextual Communication. Shoot mobile messages anytime and anywhere inside your store, venue, production plant and office building. Notros is a contextual messaging delivery platform that helps businesses increase sales leads, improve customer experience and keep employees safe by bridging the gap between proximity infrastructure and mobile experiences.",
+            "city": "Viña del Mar",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 12,
+                "enterprise_type_name": "IOT"
+            }
+        },
+        {
+            "id": 34,
+            "email_enterprise": "",
+            "facebook": "",
+            "twitter": "",
+            "linkedin": "",
+            "phone": "",
+            "own_enterprise": false,
+            "enterprise_name": "Orand / Impresee",
+            "photo": "/uploads/enterprise/photo/34/americamg.png",
+            "description": "Impresee allows your e-commerce customers to find the products they want, whenever they want, thanks to its revolutionary search technology that uses photos, sketches and text. Finding products with Impresee is easy and fun, whether it is a carpet seen at a friend's house or a special lamp they found really attractive. The cloud based API offered by Impresee allows any retail business to use this advanced search technology in its on-line stores, along with a data analysis system for a better understanding of the behavior and preferences of its customers. ",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 5,
+                "enterprise_type_name": "Ecommerce"
+            }
+        },
+        {
+            "id": 35,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Paradigma Ltda",
+            "photo": null,
+            "description": "PARADIGMA Ltda. has committed itself to deliver complete Solutions for agents and final consumers with the desire to promote the viability of the Financial Inclusion and building of assets among low-income individuals, small firms and their families on a large scale with Mobile devices, Computers, the Internet cloud, and the trust that brings the emergent technology Blockchain.",
+            "city": "Las Condes",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 8,
+                "enterprise_type_name": "Fintech"
+            }
+        },
+        {
+            "id": 36,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Peep",
+            "photo": null,
+            "description": "Peep is a platform with community made audio guides to discover the city. Everyone can Upload a story of local knowledge, mythology, tradition, urban legend and share it with travelers from the world. every time a traveler listen your story you will be paid. is easy and we will make a more connected travel experience!",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 23,
+                "enterprise_type_name": "Tourism"
+            }
+        },
+        {
+            "id": 37,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Petark",
+            "photo": null,
+            "description": "Petark is a revolutionary PET regeneration technology (PolyEthylene Terephthalate, the material bottles are made of). Used PET is transformed into pristine PET, and it happens with minimum contamination and the lowest costs in the market by so far. UPC patent is in progress and one machine already working in Chile.",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 4,
+                "enterprise_type_name": "Eco"
+            }
+        },
+        {
+            "id": 38,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Plantsss",
+            "photo": null,
+            "description": "\"Plantsss is the Spotify of plants\". Know, value and learn about the plants in your environment in a Simple, Specific & Sexy way. Ecological Botanical Radar How Plantsss are you? Download free Plantsss ",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 3,
+                "enterprise_type_name": "Biotech"
+            }
+        },
+        {
+            "id": 39,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Protome",
+            "photo": null,
+            "description": "Protome is a company committed to providing innovative molecular diagnostic solutions to improve productivity and safety for our customers in the food and farming industries. Our first product is FoodSafe, an easy-to-use device for on-site quality control of farm produce that allows fast detection and identification of multiple pathogens in a single analysis. The use of FoodSafe makes pathogen detection faster, easier and more cost-effective than ever before, allowing farms to increase the number of animals sampled, thus minimizing the incidence of pathogenic bacteria in the final product that can cause foodborne illnesses in the consumer.",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 9,
+                "enterprise_type_name": "Food"
+            }
+        },
+        {
+            "id": 40,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Proyecon Ltda",
+            "photo": null,
+            "description": "We are a Chilean company that starts operations in 2007 in the area of ​​Information Technology.  We are expert consultants in Technology that from a needs analysis of your company we plan its development.  We provide professional services of engineering, support and implementation systems; Integration of Software and Hardware; And Sale of ICT Products for public and private companies.  Our values ​​are based on ethical and responsible behavior in the individual and organizational, we respect the corporate cultures of our clients and we take care of our personnel developing them in continuous form.",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 22,
+                "enterprise_type_name": "Technology"
+            }
+        },
+        {
+            "id": 41,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "ROCKETPIN SPA",
+            "photo": null,
+            "description": "RocketPin is a mobile workforce able to provide business information through crowdsourcing. It works very simple. Companies need business information from their points of sale. ",
+            "city": "SANTIAGO",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 21,
+                "enterprise_type_name": "Software"
+            }
+        },
+        {
+            "id": 42,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Rukai Alimentos",
+            "photo": null,
+            "description": "Rukai Alimentos produces both heatlhy and sustainable food using the remanings (stems, leaves and seeds) of fruits and vegetables, wich weren’t sold in open markets and those who couldn't get into the markets. This proccess is positively impacting the environment by preventing these foods from being organic waste by using them before this. Rukai collects these discarded remainings, fruits and vegetables adding value to these by turning them into healthy snacks of highly nutritional value,.  ",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 9,
+                "enterprise_type_name": "Food"
+            }
+        },
+        {
+            "id": 43,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Shipit",
+            "photo": null,
+            "description": "Shipit is an end-to-end logistic solution for Ecommerces based on technology. Our service consists on fulfill any order of small and medium business at the lowest price and with a high quality experience.",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 5,
+                "enterprise_type_name": "Ecommerce"
+            }
+        },
+        {
+            "id": 44,
+            "email_enterprise": "",
+            "facebook": "",
+            "twitter": "",
+            "linkedin": "",
+            "phone": "",
+            "own_enterprise": false,
+            "enterprise_name": "SIMA Project",
+            "photo": "/uploads/enterprise/photo/44/mountains_sky_sunset_peaks_97149_1920x1080.jpg",
+            "description": "Urbanatika is a socio-environmental company with economic impact, creator of the agro-urban industry. We want to involve people in the processes of healthy eating, recycling and reuse of organic waste and the creation of citizen green areas. With this we are creating smarter cities from the people and at the same time the forest city.  Urbanatika, Agro-Urban Industry",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 20,
+                "enterprise_type_name": "Social"
+            }
+        },
+        {
+            "id": 45,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "SimpliRoute",
+            "photo": null,
+            "description": "SimpliRoute (www.simpliroute.com) is the route optimization revolution. Thanks to our cutting-edge route algorithms engine you can reduce your logistics costs, improve customers satisfaction and boost your last mile logistics performance from zero to world-class Fedex-UPS standards. We are democratizing logistics intelligence, so anybody can work better without a R&D department figuring out how to reduce their gas bill or CO2 emissions. Be ready to start innovating in new delivery experiences and leave the complexity to us. SimpliRoute consists on a set of intuitive interfaces, where our users can define traffic conditions, time windows, truck's load and more, and get each driver's optimal routes. The routes will be loaded on each driver's mobile app, allowing you and your customer to get real-time notifications from any delivery. You can integrate our SimpliRoute API with your systems and turbo-boost your whole logistic's process. ",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 13,
+                "enterprise_type_name": "Logistics"
+            }
+        },
+        {
+            "id": 46,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "SmartBridge",
+            "photo": null,
+            "description": "We use the brainpower of the world's top oncologists to improve health outcomes for cancer patients.  We are the world’s first on-demand interactive digital platform that connects top oncologists with patients from around the world. We provide same-day answers, next-day phone consults and expert second opinions.  ",
+            "city": "Providencia",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 11,
+                "enterprise_type_name": "Health"
+            }
+        },
+        {
+            "id": 47,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "SolarBare",
+            "photo": null,
+            "description": "Urbanatika is a socio-environmental company with economic impact, creator of the agro-urban industry. We want to involve people in the processes of healthy eating, recycling and reuse of organic waste and the creation of citizen green areas. With this we are creating smarter cities from the people and at the same time the forest city.  Urbanatika, Agro-Urban Industry",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 4,
+                "enterprise_type_name": "Eco"
+            }
+        },
+        {
+            "id": 48,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Sosmart Labs",
+            "photo": null,
+            "description": "Sosmart Labs its a technology company developing top notch products. Here our products:  SOSmart app: Automatic car crash detection and notification just using the internal sensors of a typical smartphone. Phone sends the location using GPS to emergency services reducing rescue time and saving lives(www.sosmartapp.com)  Momo: Momo is a Phone-GPS-Watch specially designed for kids. Parents can call, send messages, check the location of their kids at any moment and more just using our mobile App. (www.soymomo.com)  Dug:  Dug its a Phone-GPS-Collar for pets. Owners can call, check the location of their pets at any moment and see if their pets need more walking just by using our mobile App. (www.soymomo.com)  Old Momo(In development): Same as Momo but oriented to elders.",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 12,
+                "enterprise_type_name": "IOT"
+            }
+        },
+        {
+            "id": 49,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Telediagnosticos",
+            "photo": null,
+            "description": "DART by teledx.org is a cloud-based software that aims to automatedly detect the signs of retina diseases in digital images using artificial intelligence to prevent them in early stages. This allows an increase of healthcare system’s coverage to tackle the most common cause of blindness in working-age population.",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 11,
+                "enterprise_type_name": "Health"
+            }
+        },
+        {
+            "id": 50,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "The Copper Company",
+            "photo": null,
+            "description": "The Copper Company is an evolution textile company, through I+d have achieved multi-purpose textiles that integrate antibacterial copper with technical and inteligent fiber yarn with nanotechnology finishing to promote health and wellness being of users. Such us fabrics that incorporate properties anti bacterial, anti mosquitos, vitamins, photoluminiscence and flame retardant among others. We are a multidsciplinary group of Fashion and textile designers, chemical bio technology engineers, infectologist, entomologists, coaching and comercials specialized in e-commerce and retail businesses. ",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 7,
+                "enterprise_type_name": "Fashion"
+            }
+        },
+        {
+            "id": 51,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "TinyBytes ",
+            "photo": null,
+            "description": "We build the technology and platforms for action players to compete and make friends on mobile. TinyBytes helps mobile core gamers build communities with real time multiplayer, clans, chats, tournaments, events, emojis and more! ",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 10,
+                "enterprise_type_name": "Games"
+            }
+        },
+        {
+            "id": 52,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "TOCTOC.com",
+            "photo": null,
+            "description": "TOCTOC.com is dedicated to empowering consumers in real estate markets when they are taking a life changing decision. Our platform give information and advice to any user or family searching to buy or sell a property. We want to innovate with big data analysis and leading technology to transform anyone in a real estate expert.",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 17,
+                "enterprise_type_name": "Real Estate"
+            }
+        },
+        {
+            "id": 53,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "TREND GROUP AMERICA SPA",
+            "photo": null,
+            "description": "Trend Group America provide SaaS solutions. Our team is composed by 20 people, from different backgrounds, witch have in commun the passion to innovate.     Our more scalable solutions is called G-Leads, Intelligent CRM designed to optimized sales from leads generated from different channels. It centralize, tracks, categorizes and alerts managers so they can focus their time and effort on leads that are more likely to buy into their projects.",
+            "city": "SANTIAGO",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 17,
+                "enterprise_type_name": "Real Estate"
+            }
+        },
+        {
+            "id": 54,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Tribus Fungi",
+            "photo": null,
+            "description": "Did you know that eating is not the same as nurturing? We have it very clear, and we want to make a \"food revolution\" so we can feed ourselves efficiently and naturally, unblocking the best of the vegetable kingdom using the power of the fungi kingdom. Conin Food Company - Efficent Food TM",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 9,
+                "enterprise_type_name": "Food"
+            }
+        },
+        {
+            "id": 55,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "urbanatika",
+            "photo": null,
+            "description": "Urbanatika is a socio-environmental company with economic impact, creator of the agro-urban industry. We want to involve people in the processes of healthy eating, recycling and reuse of organic waste and the creation of citizen green areas. With this we are creating smarter cities from the people and at the same time the forest city.  Urbanatika, Agro-Urban Industry",
+            "city": "santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 1,
+                "enterprise_type_name": "Agro"
+            }
+        },
+        {
+            "id": 56,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "VACuCh",
+            "photo": null,
+            "description": "Committed to investigation and development, VACuCh is creating innovative antibacterial copper-infused products crucial to the dairy industry. Our top quality milk liners successfully protect the wellbeing of cattle while cutting costs and increasing production for the agriculture industry. ",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 16,
+                "enterprise_type_name": "Products"
+            }
+        },
+        {
+            "id": 57,
+            "email_enterprise": null,
+            "facebook": null,
+            "twitter": null,
+            "linkedin": null,
+            "phone": null,
+            "own_enterprise": false,
+            "enterprise_name": "Wine Wein Tours",
+            "photo": null,
+            "description": "We create a real life experience, something that you will remember forever. We have hand-picked the best places and boutique wineries to ensure you a great stay in Chile. Discover and learnig experiences in relation with wines, idiosyncracy, culture, native people of Chile Wine tasting classes in the middle of Los Andes mountain, lectures about native people.  .",
+            "city": "Santiago",
+            "country": "Chile",
+            "value": 0,
+            "share_price": 5000.0,
+            "enterprise_type": {
+                "id": 23,
+                "enterprise_type_name": "Tourism"
+            }
+        }
+    ]
+}
